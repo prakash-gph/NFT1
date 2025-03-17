@@ -1,0 +1,12 @@
+.donateImage{
+    display: flex;
+    justify-content: center;
+
+} 
+.bt :hover{
+  background-color: rgb(94, 223, 46);
+  cursor: pointer;
+  border-radius: 50px;
+  border: none;
+
+}
