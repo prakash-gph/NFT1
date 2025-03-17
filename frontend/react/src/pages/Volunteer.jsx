@@ -21,7 +21,7 @@ const Volunteer = () => {
                  return toast.warning("Must fill the all table")
             }
 
-            const {data} = await axios.post("http://localhost:1200/become-volunteer",{
+            const {data} = await axios.post("https://nft1-backend.onrender.com/become-volunteer",{
                 name,email,mobile,city,message
                 
             })
