@@ -77,7 +77,7 @@ const Contact = () => {
       }
 
       setShowLoader(true)
-      const { data } = await axios.post("http://localhost:1200/contact-information", {
+      const { data } = await axios.post("https://nft1-backend.onrender.com/contact-information", {
         name, email, subject, message, phoneNumber
       })
 
@@ -110,7 +110,7 @@ const Contact = () => {
         return toast.warning("fill the Otp box")
       }
 
-      const { data } = await axios.post("http://localhost:1200/verify-otp", { otpValue })
+      const { data } = await axios.post("https://nft1-backend.onrender.com/verify-otp", { otpValue })
 
       if (data.error) {
         return toast.error(data.error)
