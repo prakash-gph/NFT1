@@ -50,7 +50,7 @@ function Home() {
     }
 
     try {
-      const { data } = await axios.post("http://localhost:1200/data", { name, email });
+      const { data } = await axios.post("https://nft1-backend.onrender.com/data", { name, email });
 
       if (data.error) {
         return toast.error(data.error);
