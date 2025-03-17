@@ -1,54 +1,117 @@
-import React, { useState } from 'react'
-import Slider from './slideDatas/Sliders';
+import React, { useState,useEffect } from 'react'
 import axios from "axios"
 import { ToastContainer, toast } from "react-toastify";
 import "./Home.css"
 
-
-const Home = () => {
+function Home() {
   const slides = [
     { url: 'images/01.svg' },
     { url: 'images/INDIA.svg' },
     { url: 'images/222.svg' }
   ];
 
-  const [name, setname] = useState("")
-  const [email, setemail] = useState("")
+  const [currentIndex, setCurrentIndex] = useState(0);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      goToNext();
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [currentIndex]);
+
+
+  const goToPrevious = () => {
+    const isFirstSlide = currentIndex === 0;
+    const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
+
+    setCurrentIndex(newIndex);
+  };
+
+  const goToNext = () => {
+    const isLastSlide = currentIndex === slides.length - 1;
+
+    const newIndex = isLastSlide ? 0 : currentIndex + 1;
+
+    setCurrentIndex(newIndex);
+  };
+
+  const goToSlide = (slideIndex) => {
+    setCurrentIndex(slideIndex);
+  };
+
+
+  const [name, setname] = useState("");
+  const [email, setemail] = useState("");
 
   const onsubmit = async (e) => {
-    e.preventDefault()
+    e.preventDefault();
 
     if (!name || !email) {
-      return toast.warning("Must required name and email")
+      return toast.warning("Must required name and email");
     }
 
     try {
-      const { data } = await axios.post("http://localhost:1200/data", { name, email })
+      const { data } = await axios.post("http://localhost:1200/data", { name, email });
 
       if (data.error) {
-        return toast.error(data.error)
+        return toast.error(data.error);
       }
       else {
-        setemail("")
-        setname("")
-        toast.success("Successfuly submit")
+        setemail("");
+        setname("");
+        toast.success("Successfuly submit");
       }
 
     }
 
     catch (error) {
-      console.log(error)
+      console.log(error);
     }
 
 
-  }
+  };
   return (
 
     <div>
 
       <ToastContainer />
       <div className="slides">
-        <Slider slides={slides} />
+
+        <div className="slider-container">
+          <div className="slider">
+            <div
+              className="slides-container"
+              style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+            >
+              {slides.map((slide, index) => (
+                <div
+                  className="slide"
+                  key={index}
+                  style={{ backgroundImage: `url(${slide.url})` }}
+                ></div>
+              ))}
+            </div>
+          </div>
+
+          {/* Left Arrow */}
+          <div className="left-arrow" onClick={goToPrevious}>&#10094;</div>
+
+          {/* Right Arrow */}
+          <div className="right-arrow" onClick={goToNext}>&#10095;</div>
+
+          {/* Dots Indicator */}
+          <div className="dots-container">
+            {slides.map((_slide, slideIndex) => (
+              <div
+                className={`dot ${slideIndex === currentIndex ? 'active' : ''}`}
+                key={slideIndex}
+                onClick={() => goToSlide(slideIndex)}
+              ></div>
+            ))}
+          </div>
+        </div>
+
+
+
       </div>
       <div className="container-paragraph">
         <div className="paragraph">
@@ -120,7 +183,7 @@ const Home = () => {
         </form>
       </div>
     </div>
-  )
+  );
 }
 
 export default Home
