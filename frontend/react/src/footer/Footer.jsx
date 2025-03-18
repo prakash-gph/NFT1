@@ -1,5 +1,6 @@
 import React from 'react'
-import {FaFacebook, FaHeart, FaInstagram, FaYoutube} from "react-icons/fa"
+import {Link} from "react-router-dom"
+import {FaFacebook,FaInstagram, FaYoutube} from "react-icons/fa"
 import "../footer/footer.css"
 
 const Footer = () => {
@@ -17,13 +18,12 @@ const Footer = () => {
                 <div className='foote-col'>
                     <h4>Information</h4>
                     <ul>
-                        <li><a href='/About'>About Us</a></li>
-                        <li><a href='/Mission'>Mission & Vision</a></li>
-                        <li><a href="/Project">Project</a></li>
-                        <li><a href='#'>Events</a></li>
-                        <li><a href="/Become a volunteer">Become a Volunteer</a></li>
-            
-                        <li><a href='/Donation'>Donate Now</a></li>
+                        <li><Link className='a' to='/About'>About Us</Link></li>
+                        <li><Link className='a' to='/Mission'>Mission & Vision</Link></li>
+                        <li><Link className='a' to="/Project">Project</Link></li>
+                        <li><Link className='a' to='/Events'>Events</Link></li>
+                        <li><Link className='a' to="/Become a volunteer">Become a Volunteer</Link></li>
+                        <li><Link className='a' to='/Donation'>Donate Now</Link></li>
                     </ul>
 
                 </div>
@@ -34,9 +34,9 @@ const Footer = () => {
                     <h5>Email: info@nationfirsttrust.in</h5>
                     <h5>Website: www.nationfirsttrust.in</h5>
                     <div className='foot-icon'>
-                    <a href='#'><FaFacebook/></a>
-                    <a href='#'><FaInstagram/></a>
-                    <a href='#'><FaYoutube/></a>
+                    <Link to='#'><FaFacebook/></Link>
+                    <Link to='#'><FaInstagram/></Link>
+                    <Link to='#'><FaYoutube/></Link>
                 </div>
                 </div>
             </footer>
@@ -45,8 +45,8 @@ const Footer = () => {
                     <h6>Copyright © Nation's First Trust - All Rights Reserved</h6>
                 </div>
                 <div className="privacy-policy">
-                    <a href='#'>Privacy policy </a>-------
-                    <a href='#'>Terms & Conditions</a>
+                    <Link to='#'>Privacy policy </Link>-------
+                    <Link to='#'>Terms & Conditions</Link>
                 </div>
                 </div>
 
