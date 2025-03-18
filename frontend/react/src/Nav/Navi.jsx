@@ -50,8 +50,8 @@ const Navi = () => {
           <ul className='nav-link'>
             <li><NavLink to='/'>Home</NavLink></li>
 
-            <li onMouseEnter={() => setIsDropdownOpen(true)}
-              onMouseLeave={() => setIsDropdownOpen(false)}>
+            <li onMouseEnter={() => setIsDropdownOpen(!isDropdownOpen)}
+             >
               <p>About<i><GoChevronDown/></i></p>
              {isDropdownOpen && (
             <div className="dropdown-content">
@@ -68,12 +68,12 @@ const Navi = () => {
           </ul>
         </div> } 
         <div  className="iconsbar">
-          <FaBars onMouseEnter={()=>setShowSideBar(true)}
-          onMouseLeave={()=>setShowSideBar(false)}
-          onClick={()=>setShowSideBar(!showSideBar)} />
+           <FaBars  onMouseEnter={()=>setShowSideBar(true)}
+                    onMouseLeave={()=>setShowSideBar(false)} 
+                    />
         </div>
       </nav> 
-
+     
 
       <div className='nav2'>
   
