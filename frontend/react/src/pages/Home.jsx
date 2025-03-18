@@ -1,4 +1,5 @@
 import React, { useState,useEffect } from 'react'
+import{Link} from"react-router-dom"
 import axios from "axios"
 import { ToastContainer, toast } from "react-toastify";
 import "./Home.css"
@@ -150,10 +151,10 @@ function Home() {
           <h4>Join our foundation today and start building the <br></br>future of our society and the community of<br></br> tomorrow.</h4>
 
           <div className="link1">
-            <a href='/Become a volunteer'>Become a Volunteer</a>
+            <Link className="a" to='/Become a volunteer'>Become a Volunteer</Link>
           </div>
           <div className="link2">
-            <a href='/Donation'>Make a Donation</a>
+            <Link className="a" to='/Donation'>Make a Donation</Link>
           </div>
 
         </div>
