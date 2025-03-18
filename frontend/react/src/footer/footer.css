@@ -62,11 +62,11 @@ footer {
     padding: 20px;
 }
 
-.foot-icon a {
+.foot-icon .a {
     margin: 15px;
 }
 
-.foot-icon a :hover {
+.foot-icon .a :hover {
     color: rgb(30, 180, 16);
 }
 .copy{
@@ -76,7 +76,7 @@ footer {
     gap: 100px;
 }
 
-.privacy-policy a:hover {
+.privacy-policy .a:hover {
 
     color: rgb(20, 20, 161);
     border-bottom: 2px solid;
