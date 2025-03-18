@@ -68,7 +68,9 @@ const Navi = () => {
           </ul>
         </div> } 
         <div  className="iconsbar">
-          <FaBars onClick={()=>setShowSideBar(!showSideBar)}/>
+          <FaBars onMouseEnter={()=>setShowSideBar(true)}
+          onMouseLeave={()=>setShowSideBar(false)}
+          onClick={()=>setShowSideBar(!showSideBar)} />
         </div>
       </nav> 
 

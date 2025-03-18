@@ -230,7 +230,7 @@
     margin-top: 70px;
 }
 
-.join-commu .link1 a {
+.join-commu .link1 .a {
     color: aliceblue;
     border-radius: 30px;
     margin-top: 30px;
@@ -243,7 +243,7 @@
     margin-top: 110px;
 }
 
-.join-commu .link2 a {
+.join-commu .link2 .a {
 
     color: rgb(249, 249, 249);
     border-radius: 30px;
@@ -416,13 +416,13 @@
 
 @media (max-width:417px) {
 
-    .join-commu .link1 a {
+    .join-commu .link1 .a {
 
         font-size: 22px;
         padding: 30px 60px;
     }
 
-    .join-commu .link2 a {
+    .join-commu .link2 .a {
         font-size: 22px;
         padding: 30px 72px;
 
