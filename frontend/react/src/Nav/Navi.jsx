@@ -1,5 +1,5 @@
 import React from 'react'
-import {NavLink } from 'react-router-dom'
+import {NavLink,Link } from 'react-router-dom'
 import logo from "../assets/love.png"
 import { FaBars } from "react-icons/fa";
 import { useState } from 'react'
@@ -19,7 +19,7 @@ const Navi = () => {
           <img className="" src={logo} alt='logo'></img>
         </div>
         <div className='title'>
-          <a href='#'>NATION'S FIRST TRUST</a>
+          <Link className='a' to='/'>NATION'S FIRST TRUST</Link>
           <p>service to mankind</p>
         </div>
 
@@ -32,9 +32,9 @@ const Navi = () => {
               <p>About<i><GoChevronDown/></i></p>
              {isDropdownOpen && (
             <div className="dropdown-content">
-              <a href="/About">About Us</a>
-              <a href="/Board of turstees">Board of turstees</a>
-              <a href="/link3">Link 3</a>
+             < Link className='a' to="/About">About Us</Link>
+              <Link className='a' to="/Board of turstees">Board of turstees</Link>
+              <Link  className='a' to="/link3">Link 3</Link>
             </div>
           )}
               </li>
@@ -55,9 +55,9 @@ const Navi = () => {
               <p>About<i><GoChevronDown/></i></p>
              {isDropdownOpen && (
             <div className="dropdown-content">
-              <a href="/About">About Us</a>
-              <a href="/Board of turstees">Board of turstees</a>
-              <a href="/link3">Link 3</a>
+              <Link className='a' to="/About">About Us</Link>
+              < Link className='a' to="/Board of turstees">Board of turstees</Link>
+              <Link  className='a'to="/link3">Link 3</Link>
             </div>
           )}
               </li>
