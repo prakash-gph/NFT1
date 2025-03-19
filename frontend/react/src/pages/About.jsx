@@ -8,23 +8,24 @@ const About = () => {
   return (
     <div>
       <div className="aboutImages">
-       <img src='images/19.svg' alt='imges'></img>
-       <h1>About Us</h1> 
+        <img src='images/19.svg' alt='imges'></img>
+        <h1>About Us</h1>
       </div>
       <div className="about">
         <div className="about-paragraph">
           <h2>ABOUT THE ORGANISATION:</h2>
 
-          <p><FcAbout /> The DHARMA SEVA TRUST (DST) means “to hold together”. The need to create,<br></br>
-            to discover, to imagine is universal and requires expression and therefore support.</p>
+          <p><FcAbout /> Bharat's culture is the lifeblood of the nation. It is evident that to protect Bharat, we must <br></br>first nourish its culture.
+            If Bharat's culture fades away within its borders, and if Hindu <br></br>society ceases to exist, it would be inappropriate
+            to refer to the mere <br></br>geographical entity that remains as Bharat-India.</p>
 
-          <p><FcAbout /> The purpose of DST is to cultivate an environment for the preservation and<br></br>
-            development of artistic and cultural expressions not only of India but also<br></br> of the world as a whole.</p>
-          <p><FcAbout /> Established in June 2021, the DHARMA SEVA TRUST is a registered Public <br></br>
-            Charitable Trust based in Chennai, Tamil Nadu, India. DST perceives its role <br></br>
-            as that of a catalyst, in revitalizing cultural sensitivity in contemporary times <br></br>
-            and promoting Sanskrit at all levels FREE OF COST irrespective of<br></br>
-            gender, creed, and religion.</p>
+          <p><FcAbout /> Geographical boundaries alone do not constitute a nation. It is essential for society to be vigilant <br></br>and organized
+            so that no one would dare to undermine our values and honor. Strength arises<br></br> from organization. Therefore,
+            it is the duty of every individual to contribute to the<br></br> consolidation of Bharat's society.</p>
+
+          <p><FcAbout /> To develop and nurture an appreciation of Indian arts and culture through
+            educational<br></br> programmes, cultural orientation programmes, and outreach
+            activities for children and<br></br> young people.</p>
         </div>
         <div className="image">
           <img src={image} alt='imges'></img>
@@ -50,8 +51,8 @@ const About = () => {
                 <td>TN/2021/0295794</td>
               </tr>
               <tr>
-              <td>Chief Functionary’s Name</td>
-              <td>Dr. V Raghavendran</td>
+                <td>Chief Functionary’s Name</td>
+                <td>Dr. V Raghavendran</td>
               </tr>
               <tr>
                 <td>Chief Functionary’s Name</td>
@@ -61,7 +62,7 @@ const About = () => {
                 <td>Income Tax Exemption Certificate 80G</td>
                 <td>AADTD8335J24CH02, dated 09-08-2024</td>
               </tr>
-               
+
             </tbody>
 
           </table>

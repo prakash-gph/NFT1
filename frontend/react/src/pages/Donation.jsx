@@ -41,7 +41,7 @@ const DonationPage = () => {
       alert("Please enter a valid amount.");
       return;
     }
-
+    console.log(amount + " first")
     const options = {
       key: "rzp_test_WAG2H4yqS0mQLo", // Replace with your Razorpay Key ID
       amount: amount * 100, // Convert to paise (smallest currency unit)
@@ -65,13 +65,13 @@ const DonationPage = () => {
         color: "#3399cc",
       },
     };
-
+    
     const paymentGateway = new window.Razorpay(options);
     paymentGateway.open();
   };
 
   return (
-    
+
     <div>
       <div className="donateImage">
         <img src="images/Donatedx.svg" alt="images" />
@@ -124,9 +124,9 @@ const DonationPage = () => {
       </div>
 
       <div>
-        <h3 style={{ fontSize: "20px", marginTop:"20px" }}>Remarks</h3>
+        <h3 style={{ fontSize: "20px", marginTop: "20px" }}>Remarks</h3>
         <input
-        style={{fontSize:"23px", marginTop:"30px"}}
+          style={{ fontSize: "23px", marginTop: "30px" }}
           type="text"
           placeholder="Enter remarks"
           className="border p-2 rounded w-full"
@@ -136,7 +136,7 @@ const DonationPage = () => {
       </div>
 
       <div className="bt">
-        <button style={{padding:"10px", fontSize:"20px" , margin:"50px"}} onClick={handlePayment}>
+        <button style={{ padding: "10px", fontSize: "20px", margin: "50px" }} onClick={handlePayment}>
           Donate via Razorpay
         </button>
       </div>
