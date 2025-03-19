@@ -78,8 +78,8 @@ const DonationPage = () => {
       </div>
 
       <div style={{ margin: "100px 0px" }}>
-        <h3 style={{
-          fontSize: "50px", color: "rgb(253, 147, 67)",
+        <h3 className="donateHead" style={{
+          fontSize: "30px", color: "rgb(253, 147, 67)",
           marginBottom: "25px"
         }}>Focus Areas</h3>
 
@@ -91,10 +91,10 @@ const DonationPage = () => {
             <label key={area} style={{
               backgroundColor: "rgb(177, 240, 167)",
               display: "flex", justifyItems: "center", gap: "10px", padding: "10px",
-              fontSize: "27px", borderRadius: "30px"
+              fontSize: "17px", borderRadius: "30px"
             }}>
               <input
-                style={{ width: "25px" }}
+                style={{ width: "17px" }}
                 type="radio"
                 name="focus"
                 value={area}
@@ -108,14 +108,14 @@ const DonationPage = () => {
       </div>
 
       <div>
-        <h3 style={{ fontSize: "40px", color: "rgb(253, 147, 67)" }}>Description</h3>
-        <p style={{ fontSize: "20px" }}>{descriptions[focusArea]}</p>
+        <h3 style={{ fontSize: "35px", color: "rgb(253, 147, 67)" }}>Description</h3>
+        <p style={{ fontSize: "15px" }}>{descriptions[focusArea]}</p>
       </div>
 
       <div>
         <h3 style={{ fontSize: "20px", marginTop: "20px" }}>Enter Amount (₹)</h3>
         <input
-          style={{ padding: "10px", fontSize: "27px", marginTop: "20px" }}
+          style={{ padding: "5px", fontSize: "27px", marginTop: "20px" }}
           type="number"
           placeholder="Enter Amount"
           value={amount}
@@ -126,7 +126,7 @@ const DonationPage = () => {
       <div>
         <h3 style={{ fontSize: "20px", marginTop:"20px" }}>Remarks</h3>
         <input
-        style={{fontSize:"27px", marginTop:"30px"}}
+        style={{fontSize:"23px", marginTop:"30px"}}
           type="text"
           placeholder="Enter remarks"
           className="border p-2 rounded w-full"

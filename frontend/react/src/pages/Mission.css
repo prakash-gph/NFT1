@@ -90,6 +90,19 @@
         font-size: 40px;
         margin-top: 40px;
     }
+    .OurMission p{
+        font-size:12px;
+    }
+    .OurMission h2{
+        font-size:larger;
+    }
+    .OurMission p:hover {
+        border-radius: 20px;
+        font-size: 14px;
+        transition: calc(1.7s);
+        background-color: rgb(123, 197, 193);
+    }
+    
 }
 @media screen and (max-width:450px) {
     

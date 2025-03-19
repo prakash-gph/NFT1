@@ -2,7 +2,7 @@
     position: absolute;
     margin-top: 0px;
     border-radius: 20px;
-    background-color: #bbbbb7;
+    background-color: #fefefe;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -17,7 +17,7 @@
 }
 
 .dropdown-content .a:hover {
-    background-color: rgb(13, 13, 144);
+    background-color: rgb(241, 218, 205);
     transition-duration: 1.3s;
 }
 
@@ -42,7 +42,7 @@
 }
 
 .nav-link li :hover {
-    color: #f33fcf;
+    color: rgb(249, 102, 11);
     
 }
 
@@ -59,8 +59,8 @@
 }
 
 .active {
-    color: #f613ae;
-    border-bottom: 3px solid #f613ae;
+    color:rgb(249, 102, 11);
+    border-bottom: 3px solid rgb(249, 102, 11);
 }
 
 .logo {
@@ -111,7 +111,7 @@
 }
 
 .dona-btn:hover {
-    background-color: #f613ae;
+    background-color:rgb(249, 102, 11);
 }
 
 .nav2 {
@@ -172,7 +172,13 @@
         justify-content:center;
         top: 130px;
         width: 100%;
-        background-color: #b2aec9;
+        background-color: white;
+
+        background-color: rgba(255, 255, 255, 0.4);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+
+    
     }
 
     .nav-link {
@@ -188,7 +194,7 @@
     }
 
     .nav-link li:hover {
-        background-color: aqua;
+        background-color: rgb(240, 229, 221);
         border-radius: 10px;
         padding: 8px;
         transition: 0.5s;
@@ -232,8 +238,11 @@
     .iconsbar{
         position:relative;
         left:0px;
-        top: 25px;
-        
-        
+        top: 25px;   
+    }
+}
+@media (max-width:381px){
+    .title .a {
+        font-size: 13px;
     }
 }

@@ -34,7 +34,7 @@ const Navi = () => {
             <div className="dropdown-content">
              < Link className='a' to="/About">About Us</Link>
               <Link className='a' to="/Board of turstees">Board of turstees</Link>
-              <Link  className='a' to="/link3">Link 3</Link>
+              <Link  className='a' to="/Mission">Mission & Vision</Link>
             </div>
           )}
               </li>
@@ -57,7 +57,7 @@ const Navi = () => {
             <div className="dropdown-content">
               <Link className='a' to="/About">About Us</Link>
               < Link className='a' to="/Board of turstees">Board of turstees</Link>
-              <Link  className='a'to="/link3">Link 3</Link>
+              <Link  className='a'to="/Mission">Mission & Vision</Link>
             </div>
           )}
               </li>

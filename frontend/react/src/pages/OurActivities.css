@@ -22,7 +22,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 190px 120px;
+    margin: 190px 10px;
 
 }
 
@@ -70,6 +70,16 @@
     }
 }
 @media(max-width:600px) {
+
+    .activities-paragraph .paragraph h2 {
+        font-size: 20px;
+    }
+
+    .activities-paragraph .paragraph p {
+        margin: 10px;
+        font-size: 15px;
+    }
+
     .picture img{
         width: 100%;
         height:150px;
@@ -80,6 +90,15 @@
     }
 }
 @media (max-width:460px){
+    .activities-paragraph .paragraph h2 {
+        font-size: 15px;
+    }
+
+    .activities-paragraph .paragraph p {
+        margin: 22px;
+        font-size: 12px;
+    }
+   
     .picture img{
        
         height:110px;

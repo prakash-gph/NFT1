@@ -122,11 +122,38 @@ tr:hover {
         height:150px;
 }
     .aboutImages h1{
-        font-size: 50px;
+        font-size: 60px;
         margin-top: 40px;
     }
+   .about-paragraph h2{
+    font-size: 26px;
+   }
+
+   .about-paragraph p{
+    font-size: 15px;
+   }
+   .table1 h1{
+    font-size: 35px;    
+   }
+  
 }
 @media screen and (max-width:450px) {
+
+    .table1 h1{
+        font-size: 25px;    
+       }
+
+.tables td{
+font-size: 13px;
+}
+
+    .about-paragraph h2{
+        font-size: 20px;
+       }
+    
+       .about-paragraph p{
+        font-size: 13px;
+       }
     
     .aboutImages img{
         width: 100%;
@@ -136,4 +163,12 @@ tr:hover {
         font-size: 30px;
         margin-top: 30px;
     }
+    .image img{
+        padding: 0px;
+        margin: 50px;
+         width: 100px;
+         height: 100px;
+    }
+    
+
 }

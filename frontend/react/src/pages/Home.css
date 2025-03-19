@@ -4,29 +4,29 @@
     max-width: 100%;
     margin: 0 auto;
     overflow: hidden;
-  }
-  
-  .slider {
+}
+
+.slider {
     height: 100%;
-  }
-  
-  .slides-container {
+}
+
+.slides-container {
     display: flex;
     height: 100%;
     transition: transform 0.3s ease-in-out;
-  }
-  
-  .slide {
+}
+
+.slide {
     flex: 0 0 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-  
-  }
-  
-  /* Arrows */
-  .left-arrow,
-  .right-arrow {
+
+}
+
+/* Arrows */
+.left-arrow,
+.right-arrow {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -36,76 +36,79 @@
     user-select: none;
     padding: 18px;
     background-color: rgba(0, 0, 0, 0.3);
-  }
-  
-  .left-arrow {
+}
+
+.left-arrow {
     left: 0;
-  }
-  
-  .right-arrow {
+}
+
+.right-arrow {
     right: 0;
-  }
-  
-  .left-arrow:hover,
-  .right-arrow:hover {
+}
+
+.left-arrow:hover,
+.right-arrow:hover {
     background-color: rgba(0, 0, 0, 0.8);
-  }
-  
-  /* Dots container */
-  .dots-container {
+}
+
+/* Dots container */
+.dots-container {
     position: absolute;
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     gap: 8px;
-  }
-  
-  .dot {
+}
+
+.dot {
     width: 12px;
     height: 12px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.5);
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
-  
-  .dot.active {
+}
+
+.dot.active {
     background-color: rgba(255, 255, 255, 1);
-  }
-  
-  .dot:hover {
+}
+
+.dot:hover {
     background-color: rgba(255, 255, 255, 0.8);
-  }
-  
-  @media (max-width:1020px) {
+}
+
+@media (max-width:1020px) {
     .slider-container {
-      height: 400px;
+        height: 400px;
     }
-  
-  }
-  @media (max-width:860px) {
+
+}
+
+@media (max-width:860px) {
     .slider-container {
-      height: 300px;
+        height: 300px;
     }
-  
-  }
-  @media(max-width:650px) {
+
+}
+
+@media(max-width:650px) {
     .slider-container {
-      height: 180px;
+        height: 180px;
     }
+
     .left-arrow,
-  .right-arrow {
-    font-size: 1rem;
-    padding: 10px; 
-  }
-  }
-  
-  @media (max-width:410px){
+    .right-arrow {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
+
+@media (max-width:410px) {
     .slider-container {
-      height: 170px;
-   }
-  }
+        height: 170px;
+    }
+}
 
 
 
@@ -169,7 +172,7 @@
 }
 
 .images h6 {
-    
+
     margin-right: 240px;
     margin-left: 10px;
     padding: 2px;
@@ -180,7 +183,7 @@
 }
 
 .images h5 {
-    
+
     font-size: 30px;
     font-weight: 900;
     color: rgb(16, 19, 14);
@@ -379,19 +382,53 @@
 }
 
 @media (max-width:600px) {
+
+    .join-commu .link1 .a {
+
+        font-size: 15px;
+        padding: 25px 52px;
+        
+    }
+
+    .join-commu .link2 .a {
+        font-size: 15px;
+        padding: 25px 62px;
+
+    }
+
+
+    .container-paragraph {
+        font-size: 12px;
+    }
+
+    .paragraph {
+        padding: 10px;
+    }
+
+    .images h6 {
+        font-size: 15px;
+    }
+
+    .images h5 {
+        font-size: 19px;
+    }
+    .join-commu h4{
+        font-size: 18px;
+    }
+
     .input-box {
 
         margin-right: 200px;
     }
 
     .input-box .btn1 {
-        width: 375px;
+        width: 355px;
 
     }
 
     .input-box .btn2 {
 
-        width: 375px;
+        width: 355px;
         margin-bottom: 15px;
     }
 
@@ -410,21 +447,51 @@
     }
 
     .join-commu h1 {
-        font-size: 28px;
+        font-size: 25px;
     }
+
+
 }
 
 @media (max-width:417px) {
 
+    .input-box .btn1 {
+        width: 250px;
+        font-size: 17px;
+
+    }
+
+    .input-box .btn2 {
+        font-size: 17px;
+        width: 250px;
+    }
+
     .join-commu .link1 .a {
 
-        font-size: 22px;
-        padding: 30px 60px;
+        font-size: 13px;
+        padding: 21px 52px;
+        
     }
 
     .join-commu .link2 .a {
-        font-size: 22px;
-        padding: 30px 72px;
+        font-size: 13px;
+        padding: 21px 60px;
 
     }
+    .join-commu h1 {
+        font-size: 19px;
+    }
+    .join-commu h4{
+        font-size: 11px;
+    }
+
+    .container-paragraph {
+        font-size: 10px;
+    }
+
+    .paragraph {
+        padding: 10px;
+    }
+
+    
 }
