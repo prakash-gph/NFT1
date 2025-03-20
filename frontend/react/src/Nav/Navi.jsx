@@ -1,19 +1,35 @@
 import React from 'react'
-import {NavLink,Link } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 import logo from "../assets/love.png"
 import { FaBars } from "react-icons/fa";
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { GoChevronDown } from "react-icons/go";
 import "./Nav.css"
 
 const Navi = () => {
 
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [showSideBar,setShowSideBar] = useState(false)
+  const [showSideBar, setShowSideBar] = useState(false)
+
+  const menuRef = useRef()
+  useEffect(() => {
+
+    let handler = (e) => {
+
+      if (menuRef.current && !menuRef.current.contains(e.target)) {
+        setShowSideBar(false)
+      }
+    };
+    document.addEventListener("mousedown", handler)
+
+    return () => {
+      document.removeEventListener("mousedown", handler)
+    }
+  });
 
   return (
     <>
-      
+
       <nav className='navbar'>
         <div className='logo '>
           <img className="" src={logo} alt='logo'></img>
@@ -29,15 +45,15 @@ const Navi = () => {
 
             <li onMouseEnter={() => setIsDropdownOpen(true)}
               onMouseLeave={() => setIsDropdownOpen(false)}>
-              <p>About<i><GoChevronDown/></i></p>
-             {isDropdownOpen && (
-            <div className="dropdown-content">
-             < Link className='a' to="/About">About Us</Link>
-              <Link className='a' to="/Board of turstees">Board of turstees</Link>
-              <Link  className='a' to="/Mission">Mission & Vision</Link>
-            </div>
-          )}
-              </li>
+              <p>About<i><GoChevronDown /></i></p>
+              {isDropdownOpen && (
+                <div className="dropdown-content">
+                  < Link className='a' to="/About">About Us</Link>
+                  <Link className='a' to="/Board of turstees">Board of turstees</Link>
+                  <Link className='a' to="/Mission">Mission & Vision</Link>
+                </div>
+              )}
+            </li>
             <li><NavLink to="/Project">Project</NavLink></li>
             <li><NavLink to="/Contact">Contact</NavLink></li>
             <li><NavLink to="/Events">Events</NavLink></li>
@@ -46,37 +62,37 @@ const Navi = () => {
         </div>
 
 
-         {showSideBar && <div className='mobile-views'>
-          <ul className='nav-link'>
+        {showSideBar && <div className='mobile-views' >
+          <ul className='nav-link' ref={menuRef}>
             <li><NavLink to='/'>Home</NavLink></li>
 
-            <li onMouseEnter={() => setIsDropdownOpen(!isDropdownOpen)}
-             >
-              <p>About<i><GoChevronDown/></i></p>
-             {isDropdownOpen && (
-            <div className="dropdown-content">
-              <Link className='a' to="/About">About Us</Link>
-              < Link className='a' to="/Board of turstees">Board of turstees</Link>
-              <Link  className='a'to="/Mission">Mission & Vision</Link>
-            </div>
-          )}
-              </li>
+            <li onMouseEnter={() => setIsDropdownOpen(true)}
+              onMouseLeave={()=>setIsDropdownOpen(false)}>
+              <p>About<i><GoChevronDown /></i></p>
+              {isDropdownOpen && (
+                <div className="dropdown-content">
+                  <Link className='a' to="/About">About Us</Link>
+                  < Link className='a' to="/Board of turstees">Board of turstees</Link>
+                  <Link className='a' to="/Mission">Mission & Vision</Link>
+                </div>
+              )}
+            </li>
             <li><NavLink to="/Project">Project</NavLink></li>
             <li><NavLink to="/Contact">Contact</NavLink></li>
             <li><NavLink to="/Events">Events</NavLink></li>
             <li className=' container-d-sm-inline-grid'><NavLink to="/Donation">Donation</NavLink></li>
           </ul>
-        </div> } 
-        <div  className="iconsbar">
-           <FaBars  onMouseEnter={()=>setShowSideBar(true)}
-                    onMouseLeave={()=>setShowSideBar(false)} 
-                    />
+        </div>}
+        <div className="iconsbar">
+          <FaBars
+            onClick={(e) => setShowSideBar(!showSideBar)}
+          />
         </div>
-      </nav> 
-     
+      </nav>
+
 
       <div className='nav2'>
-  
+
       </div>
 
 
