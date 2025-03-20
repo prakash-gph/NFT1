@@ -60,8 +60,6 @@ const Navi = () => {
             <li className=' container-d-sm-inline-grid '><NavLink to="/Donation">Donation</NavLink></li>
           </ul>
         </div>
-
-
         {showSideBar && <div className='mobile-views' >
           <ul className='nav-link' ref={menuRef}>
             <li><NavLink to='/'>Home</NavLink></li>
