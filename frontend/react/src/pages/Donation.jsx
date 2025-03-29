@@ -19,10 +19,13 @@ const descriptions = {
   "Medical": "Support medical aid, treatments, and health checkups for those in need.",
   "Yoga": "Promote physical and mental well-being through yoga programs and awareness.",
   "Animal": "Help protect and rescue animals, ensuring their safety and well-being.",
-  "Below Poverty": "Aid individuals and families living below the poverty line with essential resources.",
+  "Below Poverty": "Guidance of Below Poverty",
   "Transportations": "Support transportation initiatives to improve mobility for underprivileged communities.",
   "Cultural Programmes": "Preserve and promote cultural heritage through events and artistic initiatives.",
-  "Library": "Help establish and maintain libraries to encourage education and knowledge-sharing."
+  "Library": "Help establish and maintain libraries to encourage education and knowledge-sharing.",
+  "Awareness programs": "Awareness is the first step towards change – Act now, make a difference!",
+  "Swachh Bharat":"Swasth Bharat – Clean India for a Healthy India!",
+  "School":"School is the first step towards turning dreams into reality."
 };
 
 const DonationPage = () => {
@@ -65,7 +68,7 @@ const DonationPage = () => {
         color: "#3399cc",
       },
     };
-    
+
     const paymentGateway = new window.Razorpay(options);
     paymentGateway.open();
   };
@@ -75,6 +78,7 @@ const DonationPage = () => {
     <div>
       <div className="donateImage">
         <img src="images/Donatedx.svg" alt="images" />
+      <h1>Donate</h1>
       </div>
 
       <div style={{ margin: "100px 0px" }}>

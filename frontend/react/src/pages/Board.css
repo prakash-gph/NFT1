@@ -14,10 +14,12 @@
     margin-top: 100px;
     font-size: 100px;
     font-weight: 800;
+   
     color: rgb(60, 186, 41);
 }
 
 .photo1 {
+    
     margin-top: 100px;
     display: flex;
     justify-content: center;
@@ -25,11 +27,14 @@
 }
 
 .photo1 img {
+    border-radius: 50%;
     width: 160px;
-    border: 2px solid rgb(103, 179, 56);
+    border: 2px solid rgb(255, 103, 2);
     padding: 10px;
 }
-
+.row1{
+    margin-top: 32px;
+}
 .roll {
     margin-top: 2px;
     font-size: 20px;
@@ -42,12 +47,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    justify-items: center;
 }
 
 .photo2 img {
     width: 140px;
     border-radius: 50%;
-    border: 3px solid rgb(51, 169, 53);
+    border: 3px solid rgb(255, 103, 2);
     padding: 5px;
 }
 
@@ -58,11 +64,14 @@
     flex-wrap: wrap;
     justify-content: space-around;
 }
+.row2{
+    margin-top: 32px;
+}
 
 .photo3 img {
     width: 140px;
     border-radius: 50%;
-    border: 3px solid rgb(51, 169, 53);
+    border: 3px solid  rgb(255, 103, 2);
     padding: 5px;
 }
 

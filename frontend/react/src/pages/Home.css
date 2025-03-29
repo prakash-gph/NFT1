@@ -239,7 +239,7 @@
     margin-top: 30px;
     background-color: rgb(36, 101, 101);
     font-size: 30px;
-    padding: 32px 80px;
+    padding: 20px 35px;
 }
 
 .join-commu .link2 {
@@ -252,12 +252,12 @@
     border-radius: 30px;
     font-size: 30px;
     margin-top: 150px;
-    padding: 32px 97px;
+    padding: 20px 50px;
     background-color: rgb(39, 81, 34);
 }
 
 .join-commu .link1 a:hover {
-    background-color: rgb(51, 0, 255);
+    background-color: rgb(255, 106, 0);
 }
 
 .join-commu .link2 a:hover {
