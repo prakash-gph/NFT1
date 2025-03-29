@@ -57,7 +57,8 @@ const Navi = () => {
             <li><NavLink to="/Project">Project</NavLink></li>
             <li><NavLink to="/Contact">Contact</NavLink></li>
             <li><NavLink to="/Events">Events</NavLink></li>
-            <li className=' container-d-sm-inline-grid '><NavLink to="/Donation">Donation</NavLink></li>
+            <li><NavLink to= "/Gallery">Gallery</NavLink></li>
+            <li><NavLink to="/Donation">Donation</NavLink></li>
           </ul>
         </div>
         {showSideBar && <div className='mobile-views' >
@@ -78,7 +79,8 @@ const Navi = () => {
             <li><NavLink to="/Project">Project</NavLink></li>
             <li><NavLink to="/Contact">Contact</NavLink></li>
             <li><NavLink to="/Events">Events</NavLink></li>
-            <li className=' container-d-sm-inline-grid'><NavLink to="/Donation">Donation</NavLink></li>
+            <li><NavLink to= "/Gallery">Gallery</NavLink></li>
+            <li><NavLink to="/Donation">Donation</NavLink></li>
           </ul>
         </div>}
         <div className="iconsbar">

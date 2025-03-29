@@ -12,6 +12,7 @@ import Donation from './pages/Donation'
 import Volunteer from './pages/Volunteer'
 import Mission from './pages/Mission'
 import Board from './pages/Board'
+import Gallery from './pages/gallery'
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
       <Route path='Become a Volunteer' element={<Volunteer />}></Route>
       <Route path='Mission' element={<Mission />}></Route>
       <Route path='Board of turstees' element={<Board />}></Route>
+      <Route path='Gallery' element={<Gallery/>}></Route>
       <Route path='*' element={<NotFound />} /></Route>
 
   ))
