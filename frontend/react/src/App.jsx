@@ -12,7 +12,7 @@ import Donation from './pages/Donation'
 import Volunteer from './pages/Volunteer'
 import Mission from './pages/Mission'
 import Board from './pages/Board'
-import Gallery from './pages/gallery'
+import Gallery from './pages/Gallery'
 
 
 function App() {
