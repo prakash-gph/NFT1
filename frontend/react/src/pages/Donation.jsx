@@ -77,8 +77,8 @@ const DonationPage = () => {
 
     <div>
       <div className="donateImage">
-        <img src="images/Donatedx.svg" alt="images" />
-      <h1>Donate</h1>
+        <img src="images/222.svg" alt="images" />
+     
       </div>
 
       <div style={{ margin: "100px 0px" }}>

@@ -7,7 +7,7 @@ const Mission = () => {
   return (
     <div>
       <div className="mission">
-        <img src='images/Donatedx.svg'></img>
+        <img src='images/4.png'></img>
         <h1>Mission & Vision</h1>
       </div>
       <div className="OurMission-Vision">

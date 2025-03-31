@@ -8,7 +8,7 @@ const Project = () => {
   return (
     <div>
       <div className="picture">
-        <img src='images/19.svg' alt='images'></img>
+        <img src='images/19.png' alt='images'></img>
        <h1>Project</h1>
       </div>
       <div className="activities-paragraph">

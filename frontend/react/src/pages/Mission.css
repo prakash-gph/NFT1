@@ -2,19 +2,21 @@
     display: flex;
     justify-content: center;
     width: 100%;
+   
 }
 
 .mission img {
+    
     width: 100%;
     height: 373px;
 }
 
 .mission h1 {
     position: absolute;
-    margin-top: 100px;
-    font-size: 100px;
+    margin-top: 120px;
+    font-size: 50px;
     font-weight: 800;
-    color: rgb(245, 112, 40);
+    color: rgb(20, 94, 123);
 
 }
 
@@ -50,7 +52,7 @@
     font-size: 20px;
 }
 
-.image img{
+.image img {
     width: 100%;
     height: 500px;
 }
@@ -71,23 +73,25 @@
     }
 }
 
-@media(max-width:950px){
- 
-    .mission img{
-        height:230px;
-}
-    .mission h1{
+@media(max-width:950px) {
+
+    .mission img {
+        height: 230px;
+    }
+
+    .mission h1 {
         font-size: 50px;
         margin-top: 78px;
     }
 }
 
-@media(max-width:700px){
- 
-    .mission img{
-        height:165px;
-}
-    .mission h1{
+@media(max-width:700px) {
+
+    .mission img {
+        height: 165px;
+    }
+
+    .mission h1 {
         font-size: 45px;
         margin-top: 50px;
     }
@@ -95,33 +99,39 @@
 
 
 @media screen and (max-width:600px) {
-    .mission img{
-        height:150px;
-}
-    .mission h1{
+    .mission img {
+        height: 150px;
+    }
+
+    .mission h1 {
         font-size: 40px;
         margin-top: 40px;
     }
-    .OurMission p{
-        font-size:12px;
+
+    .OurMission p {
+        font-size: 12px;
     }
-    .OurMission h2{
-        font-size:larger;
+
+    .OurMission h2 {
+        font-size: larger;
     }
+
     .OurMission p:hover {
         border-radius: 20px;
         font-size: 14px;
         transition: calc(1.7s);
         background-color: rgb(123, 197, 193);
     }
-    
+
 }
+
 @media screen and (max-width:450px) {
-    
-    .mission img{
-        height:110px;
-}
-    .mission h1{
+
+    .mission img {
+        height: 110px;
+    }
+
+    .mission h1 {
         font-size: 30px;
         margin-top: 30px;
     }

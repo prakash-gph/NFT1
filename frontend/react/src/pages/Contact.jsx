@@ -133,7 +133,7 @@ const Contact = () => {
     <> <ToastContainer />
 
       <div className='cont-background'>
-        <img src="images/19.svg" alt="imges" />
+        <img src="images/project.png" alt="imges" />
         <h1>Contact</h1>
       </div>
       <div className="contact">
