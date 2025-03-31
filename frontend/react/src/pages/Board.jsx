@@ -11,7 +11,7 @@ const Board = () => {
       </div>
 
       <div className="photo1">
-        <img src='images/photo/S.Sampangi.jpeg' alt='image'></img>
+        <img src='images/photo/S.Sampangi.svg' alt='image'></img>
       </div>
 
       <div className="roll">
@@ -34,7 +34,7 @@ const Board = () => {
         </div>
 
         <div className='row1'>
-          <img src='images/photo/M.Ramesh.jpeg' alt='image'></img>
+          <img src='images/photo/M.Ramesh.svg' alt='image'></img>
           <h4 style={{ textAlign: "center" }}>M.Ramesh</h4>
           <p>B.Tech Admin/Trustee</p>
         </div>
@@ -42,7 +42,7 @@ const Board = () => {
 
       <div className="photo3">
         <div className='row2'>
-          <img src='images/photo/G.RAJSEKAR.jpeg' alt='image'></img>
+          <img src='images/photo/G.RAJSEKAR.svg' alt='image'></img>
           <h4 style={{ textAlign: "center" }}>G.RAJSEKAR</h4>
           <p style={{ textAlign: "center" }}>Secretary/Trustee</p>
         </div>
@@ -54,7 +54,7 @@ const Board = () => {
         </div>
 
         <div className='row2'>
-          <img style={{ marginLeft: "60px" }} src='images/photo/Thirupathi.R.jpeg' alt='image'></img>
+          <img style={{ marginLeft: "60px" }} src='images/photo/Thirupathi.R.svg' alt='image'></img>
           <h4 style={{ textAlign: "center" }}>Thirupathi.R</h4>
         <p>B.E Aeronautical/DeputySecretary/Trustee</p>
         </div>
