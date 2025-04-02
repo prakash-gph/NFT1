@@ -14,15 +14,15 @@
     margin-top: 100px;
     font-size: 50px;
     font-weight: 800;
-   
     color: rgb(208, 73, 49);
 }
 
 .photo1 {
-    
+
     margin-top: 100px;
     display: flex;
     justify-content: center;
+
 
 }
 
@@ -32,8 +32,14 @@
     border: 2px solid rgb(215, 95, 26);
     padding: 10px;
 }
-.row1{
-    margin-top: 32px;
+
+.row1 {
+    margin: 50px 0px;
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  
 }
 .roll {
     margin-top: 2px;
@@ -47,7 +53,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    justify-items: center;
+    
 }
 
 .photo2 img {
@@ -58,20 +64,23 @@
 }
 
 .photo3 {
+
     margin-top: 150px;
     margin-bottom: 100px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.row2{
+
+.row2 {
     margin-top: 32px;
+
 }
 
 .photo3 img {
     width: 140px;
     border-radius: 50%;
-    border: 3px solid  rgb(215, 95, 26);
+    border: 3px solid rgb(215, 95, 26);
     padding: 5px;
 }
 
@@ -90,30 +99,44 @@
     }
 }
 
-@media(max-width:950px){
-    .boardImage img{
-        height:230px;
-}
-    .boardImage h1{
-        font-size: 55px;
+
+
+@media(max-width:950px) {
+    .boardImage img {
+        height: 230px;
+    }
+
+    .boardImage h1 {
+        font-size: 45px;
         margin-top: 70px;
     }
 }
+
 @media screen and (max-width:605px) {
-    .boardImage img{
-        height:150px;
-}
-    .boardImage h1{
-        font-size: 35px;
+    .boardImage img {
+        height: 150px;
+    }
+
+    .boardImage h1 {
+        font-size: 20px;
         margin-top: 40px;
     }
+    .row1,.roll{
+       
+        font-size: small;
+    }
+    .row1 img , .photo1 img{
+        width: 110px;
+    }
 }
+
 @media screen and (max-width:450px) {
-    
-    .boardImage img{
-        height:110px;
-}
-    .boardImage h1{
+
+    .boardImage img {
+        height: 110px;
+    }
+
+    .boardImage h1 {
         font-size: 15px;
         margin-top: 30px;
     }

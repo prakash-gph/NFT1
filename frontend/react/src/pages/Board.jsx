@@ -16,52 +16,69 @@ const Board = () => {
 
       <div className="roll">
         <h4>S.Sampangi</h4>
-        <h6> Prisident</h6>
+        <h5> Prisident</h5>
       </div>
+
+
 
       <div className="photo2">
 
         <div className='row1'>
-          <img style={{ marginLeft: "30px" }} src='images/photo/S.Yogini.jpeg' alt='image'></img>
-          <h4 style={{ textAlign: "center" }}>S.Yogini</h4>
+          <img src='images/photo/S.Yogini.svg' alt='image'></img>
+          <h4 >S.Yogini</h4>
           <p style={{ textAlign: "center" }}>MA Let Vice Chairman/Trustee</p>
         </div>
 
-        <div className='row1'>
-          <img style={{ marginLeft: "22px" }} src='images/photo/Chandiraseakar.JPG' alt='image'></img>
-          <h4 style={{ textAlign: "center" }}>Chandiraseakar</h4>
-          <p> Ex-Army Secretary/Trustee</p>
+        <div className='row1' >
+          <img src='images/photo/Chandiraseakar.svg' alt='image'></img>
+          <h4>Chandiraseakar</h4>
+          <p style={{ textAlign: "center" }}> Ex-Army Secretary/Trustee</p>
         </div>
 
-        <div className='row1'>
+        <div className='row1' >
           <img src='images/photo/M.Ramesh.svg' alt='image'></img>
-          <h4 style={{ textAlign: "center" }}>M.Ramesh</h4>
-          <p>B.Tech Admin/Trustee</p>
+          <h4>M.Ramesh</h4>
+          <p style={{ textAlign: "center" }}>B.Tech Admin/Trustee</p>
         </div>
-      </div>
 
-      <div className="photo3">
-        <div className='row2'>
+
+
+
+
+
+        {/* <div className="photo"> */}
+        <div className='row1' >
           <img src='images/photo/G.RAJSEKAR.svg' alt='image'></img>
-          <h4 style={{ textAlign: "center" }}>G.RAJSEKAR</h4>
-          <p style={{ textAlign: "center" }}>Secretary/Trustee</p>
+          <h4>G.RAJSEKAR</h4>
+          <p>Secretary/Trustee</p>
         </div>
 
-        <div className='row2'>
-          <img src='images/photo/M.Boobalan.jpeg' alt='image'></img>
-          <h4 style={{ textAlign: "center" }}>M.Boobalan</h4>
-          <p style={{ textAlign: "center" }}>Treasure/Trustee</p>
+        <div className='row1' >
+          <img src='images/photo/Thirupathi.R.svg' alt='image'></img>
+          <h4 >Thirupathi.R</h4>
+          <p style={{ textAlign: "center" }}>B.E Aeronautical<br></br>/DeputySecretary/Trustee</p>
         </div>
 
-        <div className='row2'>
-          <img style={{ marginLeft: "60px" }} src='images/photo/Thirupathi.R.svg' alt='image'></img>
-          <h4 style={{ textAlign: "center" }}>Thirupathi.R</h4>
-        <p>B.E Aeronautical/DeputySecretary/Trustee</p>
+       <div className='row1'>
+          <img src='images/photo/M.Boobalan.svg' alt='image'></img>
+          <h4>M.Boobalan</h4>
+          <p>Treasure/Trustee</p>
         </div>
+
+
       </div>
+
+
+
+
 
 
     </div>
+
+
+    // </div>
+
+
   )
 }
 

@@ -1,7 +1,7 @@
 import React from 'react'
-import { FcTodoList } from "react-icons/fc";
+import { FcBookmark, FcDiploma2, FcIcons8Cup, FcIdea, FcIphone, FcKindle, FcTodoList } from "react-icons/fc";
 import { FcSportsMode } from "react-icons/fc";
-import image from "/images/21.jpeg"
+import image from "/images/21.svg"
 import "./OurActivities.css"
 
 const Project = () => {
@@ -9,32 +9,90 @@ const Project = () => {
     <div>
       <div className="picture">
         <img src='images/19.png' alt='images'></img>
-       <h1>Project</h1>
+        <h1>Project</h1>
       </div>
       <div className="activities-paragraph">
         <div className="paragraph">
-            <h2><FcTodoList/> Our Activities</h2>
-            <p>Bharat's culture is the lifeblood of the nation. It is evident that to protect 
-              Bharat, we must first nourish its culture.<br></br> If Bharat's
-               culture fades away within its borders, and if Hindu
-                society ceases to exist, it would be inappropriate <br></br>to
-                 refer to the mere geographical entity that remains as
-                  Bharat-India.</p>
-              <p><FcSportsMode/>Geographical boundaries alone do not constitute a nation. 
-              It is essential for society to be vigilant and organized <br></br>so that no one would 
-              dare to undermine our values and honor. Strength arises from organization. Therefore,<br></br> 
-              it is the duty of every individual to contribute to the consolidation of Bharat's society.</p>
-              <p><FcSportsMode/> To develop and nurture an appreciation of
-               Indian arts and culture through <br></br>educational programmes, 
-               cultural orientation programmes, and outreach <br></br>activities 
-               for children and young people.</p>
-        </div>
+
+          <h2>Bharat Needs Projects: The Role of Nation First Trust in<br></br>Driving Development</h2>
+
+          <p>India, or Bharat, stands at the crossroads of unprecedented growth and challenges.
+                        With a rapidly growing population, increasing urbanization, and a surge in 
+                        technological advancements, the country requires structured and impactful projects
+                        to sustain its progress. Recognizing this urgent need, Nation First Trust is stepping
+                        forward to bring transformational change by initiating and supporting projects that
+                        address critical sectors of development.</p>
+
+          <h3> Why Bharat Needs Projects?</h3>
+
+          <p><FcSportsMode />Bharat is a land of immense potential, yet it faces several socio-economic<br></br>
+            hurdles that hinder its path to becoming a global powerhouse.<br></br>Focused projects are essential for:</p>
+
+          <h3>Infrastructure Development:</h3>
+
+          <p><FcSportsMode />Modernized roads, bridges, smart cities,and efficient transport systems to <br></br>facilitate trade and daily life.</p>
+
+          <h3>Education & Skill Development:</h3>
+
+          <p><FcSportsMode />Quality education and vocational training for youth to contribute effectively <br></br>to the workforce.</p>
+          
+          <h3>Employment Generation:</h3>
+
+          <p><FcSportsMode />nnovative projects in agriculture, manufacturing, and technology to create<br></br>sustainable job opportunities.</p>
+
+          <h3>Renewable Energy Expansion:</h3>
+
+          <p><FcSportsMode />Shifting towards clean energy sources for environmental sustainability and<br></br>reducing dependency on fossil fuels</p>
+
+          <h3>Health & Sanitation:</h3>
+
+          <p><FcSportsMode />Ensuring healthcare accessibility and sanitation projects to improve quality<br></br>of life, especially in rural areas.</p>
+
+          <h3> Rural Development:</h3>
+
+          <p><FcSportsMode />Strengthening rural economies through agriculture, self-employment, and<br></br>digital connectivity for holistic national growth.</p>
+
+          <h2>The Role of Nation First Trust</h2>
+
+          <p>Nation First Trust is committed to spearheading impactful projects that align
+        <br></br>with the vision of a self-reliant and progressive Bharat.<br></br>Our focus areas include:</p>
+
+       
         <div className="activities-image">
           <img src={image} alt='image' ></img>
         </div>
+
+
+          <h3>Economic Upliftment:</h3>
+
+          <p><FcSportsMode /> Implementing programs to support MSMEs, startups, and self-employment<br></br>initiatives.</p>
+
+          <h3>Educational Reforms:</h3>
+
+          <p><FcSportsMode />Partnering with institutions to enhance digital literacy and skill development.</p>
+
+          <h3>Sustainable Development:</h3>
+
+          <p><FcSportsMode />Promoting eco-friendly solutions, waste management, and water<br></br>conservation projects</p>
+
+          <h3>Social Welfare Initiatives:</h3>
+
+          <p><FcSportsMode />Engaging in healthcare outreach, women empowerment programs, and<br></br>support for underprivileged communities.</p>
+
+          <h3>Rural Empowerment:</h3>
+
+          <p><FcSportsMode />Focusing on agricultural innovations, rural entrepreneurship,<br></br>decentralized renewable energy solutions, and improved access to<br></br>
+            healthcare and education in remote areas.</p>
+
+          <h2>Call to Action</h2>
+          <p><FcBookmark />Bharat’s progress depends on the collective efforts of its people.
+            Nation First Trust <br></br>invites individuals, corporations, and policymakers
+            to collaborate and contribute to this <br></br>mission. Whether through financial support, volunteering, or innovative ideas, <br></br>every contribution can make a difference.</p>
+
+        </div>
       </div>
 
-      
+
     </div>
   )
 }
