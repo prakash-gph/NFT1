@@ -8,9 +8,11 @@ const About = () => {
   return (
     <div>
       <div className="aboutImages">
-        <img src='images/2.png' alt='imges'></img>
-        <h1>About Us</h1>
+        <img src='images\about.svg' alt='imges'></img>
       </div>
+
+      <h1 className='about-head'>About Us</h1>
+
       <div className="about">
         <div className="about-paragraph">
           <h2>ABOUT THE ORGANISATION:</h2>

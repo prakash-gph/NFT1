@@ -1,5 +1,5 @@
-import React, { useState,useEffect } from 'react'
-import{Link} from"react-router-dom"
+import React, { useState, useEffect } from 'react'
+import { Link } from "react-router-dom"
 import axios from "axios"
 import { ToastContainer, toast } from "react-toastify";
 import "./Home.css"
@@ -73,14 +73,12 @@ function Home() {
   return (
 
     <div>
-
       <ToastContainer />
       <div className="slides">
 
         <div className="slider-container">
           <div className="slider">
-            <div
-              className="slides-container"
+            <div className="slides-container"
               style={{ transform: `translateX(-${currentIndex * 100}%)` }}
             >
               {slides.map((slide, index) => (
@@ -110,10 +108,11 @@ function Home() {
             ))}
           </div>
         </div>
-
-
-
       </div>
+
+
+
+
       <div className="container-paragraph">
         <div className="paragraph">
           <h6>About</h6>

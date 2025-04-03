@@ -1,5 +1,5 @@
 import React from 'react'
-import { FcBookmark, FcDiploma2, FcIcons8Cup, FcIdea, FcIphone, FcKindle, FcTodoList } from "react-icons/fc";
+import { FcBookmark} from "react-icons/fc";
 import { FcSportsMode } from "react-icons/fc";
 import image from "/images/21.svg"
 import "./OurActivities.css"
@@ -8,9 +8,12 @@ const Project = () => {
   return (
     <div>
       <div className="picture">
-        <img src='images/19.png' alt='images'></img>
-        <h1>Project</h1>
+        <img src='images/project.svg' alt='images'></img>
+       
       </div>
+
+      <h1 className='project-head'>Project</h1>
+
       <div className="activities-paragraph">
         <div className="paragraph">
 

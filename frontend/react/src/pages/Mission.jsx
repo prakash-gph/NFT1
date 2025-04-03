@@ -7,9 +7,13 @@ const Mission = () => {
   return (
     <div>
       <div className="mission">
-        <img src='images/4.png'></img>
-        <h1>Mission & Vision</h1>
+        <img src='images/mission.svg'></img>
+        
       </div>
+
+      <h1 className='mission-head'>Mission & Vision</h1>
+
+
       <div className="OurMission-Vision">
         <div className="OurMission">
           <h2>Our Mission & Vision</h2>
@@ -24,6 +28,7 @@ const Mission = () => {
       
               </div>
         <div className="image">
+          <h5 className='image-head'>Mission to serve, vision to succeed</h5>
           <img src={img} alt="images" />
         </div>
       </div>

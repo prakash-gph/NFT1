@@ -21,3 +21,27 @@
 .f-container img {
     width: 180px;
 }
+
+
+@media(max-width:600px) {
+
+
+    .first-container {
+
+        margin: 50px 50px;
+    }
+
+    .f-container {
+
+        gap: 50px;
+        margin: 25px 0px;
+    }
+
+    .f-container-heading {
+        font-size: 12px;
+    }
+
+    .f-container img {
+        width: 120px;
+    }
+}

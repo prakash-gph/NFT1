@@ -134,8 +134,10 @@ const Contact = () => {
 
       <div className='cont-background'>
         <img src="images/project.png" alt="imges" />
-        <h1>Contact</h1>
       </div>
+
+      <h1 className='contact-head'>Contact</h1>
+
       <div className="contact">
         {showContactDetails && <div className="contact-information">
 

@@ -6,9 +6,10 @@ const Board = () => {
     <div style={{ backgroundColor: "rgb(255, 255, 255)" }}>
 
       <div className="boardImage">
-        <img src='images/5.png' alt='image'></img>
-        <h1>BOARD OF TRUSTEES</h1>
+        <img src='images/board.svg' alt='image'></img>
       </div>
+
+      <h1 className='board-head'>BOARD OF TRUSTEES</h1>
 
       <div className="photo1">
         <img src='images/photo/S.Sampangi.svg' alt='image'></img>

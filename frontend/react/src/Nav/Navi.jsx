@@ -55,9 +55,9 @@ const Navi = () => {
               )}
             </li>
             <li><NavLink to="/Project">Project</NavLink></li>
-            <li><NavLink to="/Contact">Contact</NavLink></li>
             <li><NavLink to="/Events">Events</NavLink></li>
             <li><NavLink to= "/Gallery">Gallery</NavLink></li>
+            <li><NavLink to="/Contact">Contact</NavLink></li>
             <li><NavLink to="/Donation">Donation</NavLink></li>
           </ul>
         </div>
@@ -77,9 +77,9 @@ const Navi = () => {
               )}
             </li>
             <li><NavLink to="/Project">Project</NavLink></li>
-            <li><NavLink to="/Contact">Contact</NavLink></li>
             <li><NavLink to="/Events">Events</NavLink></li>
             <li><NavLink to= "/Gallery">Gallery</NavLink></li>
+            <li><NavLink to="/Contact">Contact</NavLink></li>
             <li><NavLink to="/Donation">Donation</NavLink></li>
           </ul>
         </div>}

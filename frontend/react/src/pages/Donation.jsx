@@ -25,7 +25,8 @@ const descriptions = {
   "Library": "Help establish and maintain libraries to encourage education and knowledge-sharing.",
   "Awareness programs": "Awareness is the first step towards change – Act now, make a difference!",
   "Swachh Bharat":"Swasth Bharat – Clean India for a Healthy India!",
-  "School":"School is the first step towards turning dreams into reality."
+  "School":"School is the first step towards turning dreams into reality.",
+  "Ex- Army":"Served with honor, living with pride."
 };
 
 const DonationPage = () => {
@@ -77,7 +78,7 @@ const DonationPage = () => {
 
     <div>
       <div className="donateImage">
-        <img src="images/222.svg" alt="images" />
+        <img src="images/donate.svg" alt="images" />
      
       </div>
 
@@ -93,7 +94,7 @@ const DonationPage = () => {
         }}>
           {Object.keys(descriptions).map((area) => (
             <label key={area} style={{
-              backgroundColor: "rgb(177, 240, 167)",
+              backgroundColor:"lightblue",
               display: "flex", justifyItems: "center", gap: "10px", padding: "10px",
               fontSize: "17px", borderRadius: "30px"
             }}>
