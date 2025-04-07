@@ -24,12 +24,53 @@ const descriptions = {
   "Cultural Programmes": "Preserve and promote cultural heritage through events and artistic initiatives.",
   "Library": "Help establish and maintain libraries to encourage education and knowledge-sharing.",
   "Awareness programs": "Awareness is the first step towards change – Act now, make a difference!",
-  "Swachh Bharat":"Swasth Bharat – Clean India for a Healthy India!",
-  "School":"School is the first step towards turning dreams into reality.",
-  "Ex- Army":"Served with honor, living with pride."
+  "Swachh Bharat": "Swasth Bharat – Clean India for a Healthy India!",
+  "School": "School is the first step towards turning dreams into reality.",
+  "Ex- Army": "Served with honor, living with pride."
 };
 
 const DonationPage = () => {
+
+  //** slide images*/
+  const slides = [
+    { url: 'images/D1.svg' },
+    { url: 'images/D2.svg' },
+    { url: 'images/D3.svg' },
+    { url: 'images/D4.svg' },
+    { url: 'images/D5.svg' }
+  ];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      goToNext();
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [currentIndex]);
+
+
+  const goToPrevious = () => {
+    const isFirstSlide = currentIndex === 0;
+    const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
+
+    setCurrentIndex(newIndex);
+  };
+
+  const goToNext = () => {
+    const isLastSlide = currentIndex === slides.length - 1;
+
+    const newIndex = isLastSlide ? 0 : currentIndex + 1;
+
+    setCurrentIndex(newIndex);
+  };
+
+  const goToSlide = (slideIndex) => {
+    setCurrentIndex(slideIndex);
+  };
+
+
+
+
   const [focusArea, setFocusArea] = useState("Education");
   const [amount, setAmount] = useState("");
   const [remarks, setRemarks] = useState("Education"); // Default remark
@@ -77,10 +118,45 @@ const DonationPage = () => {
   return (
 
     <div>
-      <div className="donateImage">
-        <img src="images/donate.svg" alt="images" />
-     
+
+      <div className="slides2">
+
+        <div className="slider-container2">
+          <div className="slider2">
+            <div className="slides-container2"
+              style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+            >
+              {slides.map((slide, index) => (
+                <div
+                  className="slide2"
+                  key={index}
+                  style={{ backgroundImage: `url(${slide.url})` }}
+
+                ></div>
+              ))}
+            </div>
+          </div>
+
+          {/* Left Arrow */}
+          <div className="left-arrow2" onClick={goToPrevious}>&#10094;</div>
+
+          {/* Right Arrow */}
+          <div className="right-arrow2" onClick={goToNext}>&#10095;</div>
+
+          {/* Dots Indicator */}
+          <div className="dots-container2">
+            {slides.map((_slide, slideIndex) => (
+              <div
+                className={`dot2 ${slideIndex === currentIndex ? 'active' : ''}`}
+                key={slideIndex}
+                onClick={() => goToSlide(slideIndex)}
+              ></div>
+            ))}
+          </div>
+        </div>
       </div>
+
+
 
       <div style={{ margin: "100px 0px" }}>
         <h3 className="donateHead" style={{
@@ -94,7 +170,7 @@ const DonationPage = () => {
         }}>
           {Object.keys(descriptions).map((area) => (
             <label key={area} style={{
-              backgroundColor:"lightblue",
+              backgroundColor: "lightblue",
               display: "flex", justifyItems: "center", gap: "10px", padding: "10px",
               fontSize: "17px", borderRadius: "30px"
             }}>

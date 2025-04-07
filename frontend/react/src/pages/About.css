@@ -22,14 +22,16 @@
 }
 
 .image img {
-    margin: 50px;
-    width: 400px;
-    height: 350px;
+   
+    padding: 30px;
+    width: 100%;
+   
+    
 
 }
 
 .about {
-    margin-top: 100px;
+    margin-top: 150px;
     margin-bottom: 100px;
     display: flex;
     flex-wrap: wrap;

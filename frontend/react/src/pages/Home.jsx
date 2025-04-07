@@ -6,9 +6,11 @@ import "./Home.css"
 
 function Home() {
   const slides = [
-    { url: 'images/01.svg' },
-    { url: 'images/INDIA.svg' },
-    { url: 'images/222.svg' }
+    { url: 'images/slide1.svg' },
+    { url: 'images/slide2.svg' },
+    { url: 'images/slide3.svg' },
+    { url: 'images/slide4.svg' },
+    { url: 'images/slide5.svg' }
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -86,6 +88,7 @@ function Home() {
                   className="slide"
                   key={index}
                   style={{ backgroundImage: `url(${slide.url})` }}
+
                 ></div>
               ))}
             </div>

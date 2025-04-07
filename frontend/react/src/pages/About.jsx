@@ -1,5 +1,5 @@
 import React from 'react'
-import image from "/images/23.svg"
+import image from "/images/barat Mata.svg"
 import { FcAbout } from "react-icons/fc";
 
 import "./About.css"
