@@ -27,13 +27,13 @@ const Board = () => {
 
         <div className='row1' >
           <img src='images/photo/Chandiraseakar.svg' alt='image'></img>
-          <h4>R.Chandirasekar / Ex-Army</h4>
+          <h4>R.Chandirasekar Ex-Army</h4>
           <p style={{ textAlign: "center" }}>  Secretary / Trustee</p>
         </div>
 
         <div className='row1' >
           <img src='images/photo/M.Ramesh.svg' alt='image'></img>
-          <h4>M.Ramesh / B.Tech</h4>
+          <h4>M.Ramesh  B.Tech</h4>
           <p style={{ textAlign: "center" }}> Admin / Trustee</p>
         </div>
 
@@ -45,7 +45,7 @@ const Board = () => {
 
         <div className='row1' >
           <img src='images/photo/Thirupathi.R.svg' alt='image'></img>
-          <h4 >R.Thirupathi / B.E Aeronautical</h4>
+          <h4 >R.Thirupathi  B.E Aeronautical</h4>
           <p style={{ textAlign: "center" }}>DeputySecretary / Trustee</p>
         </div>
 
