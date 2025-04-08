@@ -84,9 +84,8 @@
 
 
 .bt :hover {
-  background-color: rgb(94, 223, 46);
+  background-color: rgb(244, 80, 4);
   cursor: pointer;
-  border-radius: 50px;
   border: none;
 
 }

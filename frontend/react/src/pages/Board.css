@@ -6,9 +6,10 @@
 
 .boardImage img {
     width: 100%;
-   
+
 }
-.board-head{
+
+.board-head {
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(195, 98, 18);
@@ -18,8 +19,8 @@
 
     margin-top: 100px;
     display: flex;
-    justify-content: center;
-
+    align-items: center;
+    flex-direction: column;
 
 }
 
@@ -31,26 +32,32 @@
 }
 
 .row1 {
-    margin: 50px 0px;
-    flex-basis: 50%;
+    margin: 80px 0px;
+    flex-basis: 32%;
     display: flex;
     align-items: center;
     flex-direction: column;
-  
+
 }
-.roll {
-    margin-top: 2px;
-    font-size: 20px;
-    text-align: center;
+
+.photo1 h4,
+.row1 h4 {
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-bottom-color: rgb(215, 95, 26);
+    border-bottom-style: dotted;
+    margin: 5px 0px;
+    color: rgb(215, 95, 26);
+    border-bottom-width: 3px;
 
 }
 
 .photo2 {
-    margin-top: 100px;
+    margin: 100px 0px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    
+
 }
 
 .photo2 img {
@@ -60,38 +67,32 @@
     padding: 5px;
 }
 
-.photo3 {
-
-    margin-top: 150px;
-    margin-bottom: 100px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
 
 .row2 {
     margin-top: 32px;
 
 }
 
-.photo3 img {
-    width: 140px;
-    border-radius: 50%;
-    border: 3px solid rgb(215, 95, 26);
-    padding: 5px;
-}
-
 
 @media screen and (max-width:605px) {
-     .board-head{
-        font-size: small;
-     }
 
-    .row1,.roll{
-       
+    .row1 {
+        margin: 80px 0px;
+        flex-basis: 50%;
+    }
+
+    .board-head {
         font-size: small;
     }
-    .row1 img , .photo1 img{
+
+    .row1,
+    .photo1 {
+
+        font-size: small;
+    }
+
+    .row1 img,
+    .photo1 img {
         width: 110px;
     }
 }

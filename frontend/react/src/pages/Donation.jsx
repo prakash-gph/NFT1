@@ -217,8 +217,9 @@ const DonationPage = () => {
       </div>
 
       <div className="bt">
-        <button style={{ padding: "10px", fontSize: "20px", margin: "50px" }} onClick={handlePayment}>
-          Donate via Razorpay
+        <button style={{ padding: "15px", fontSize: "20px"
+          ,margin: "70px" , borderRadius:"20px" }} onClick={handlePayment}>
+          Donate
         </button>
       </div>
     </div>
