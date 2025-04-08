@@ -21,38 +21,38 @@ const Board = () => {
 
         <div className='row1'>
           <img src='images/photo/S.Yogini.svg' alt='image'></img>
-          <h4 >S.Yogini</h4>
-          <p style={{ textAlign: "center" }}>M.A.LET Vice Chairman/Trustee</p>
+          <h4>S.Yogini M.A.LET</h4>
+          <p style={{ textAlign: "center" }}> Vice Chairman / Trustee</p>
         </div>
 
         <div className='row1' >
           <img src='images/photo/Chandiraseakar.svg' alt='image'></img>
-          <h4>R.Chandirasekar</h4>
-          <p style={{ textAlign: "center" }}> Ex-Army Secretary/Trustee</p>
+          <h4>R.Chandirasekar / Ex-Army</h4>
+          <p style={{ textAlign: "center" }}>  Secretary / Trustee</p>
         </div>
 
         <div className='row1' >
           <img src='images/photo/M.Ramesh.svg' alt='image'></img>
-          <h4>M.Ramesh</h4>
-          <p style={{ textAlign: "center" }}>B.Tech Admin/Trustee</p>
+          <h4>M.Ramesh / B.Tech</h4>
+          <p style={{ textAlign: "center" }}> Admin / Trustee</p>
         </div>
 
         <div className='row1' >
           <img src='images/photo/G.RAJSEKAR.svg' alt='image'></img>
           <h4>G.RAJSEKAR</h4>
-          <p>Secretary/Trustee</p>
+          <p>Secretary / Trustee</p>
         </div>
 
         <div className='row1' >
           <img src='images/photo/Thirupathi.R.svg' alt='image'></img>
-          <h4 >R.Thirupathi</h4>
-          <p style={{ textAlign: "center" }}>B.E Aeronautical<br></br>/DeputySecretary/Trustee</p>
+          <h4 >R.Thirupathi / B.E Aeronautical</h4>
+          <p style={{ textAlign: "center" }}>DeputySecretary / Trustee</p>
         </div>
 
        <div className='row1'>
           <img src='images/photo/M.Boobalan.svg' alt='image'></img>
           <h4>M.Boobalan</h4>
-          <p>Treasure/Trustee</p>
+          <p>Treasure / Trustee</p>
         </div>
 
 
