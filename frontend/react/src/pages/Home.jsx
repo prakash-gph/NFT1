@@ -118,8 +118,7 @@ function Home() {
 
       <div className="container-paragraph">
         <div className="paragraph">
-          <h6>About</h6>
-          <h1>Nation's First Trust</h1>
+          <h1>Who We Are</h1>
 
           <p>Nation's First Trust (NFT) is dedicated to transforming Bharat into a<br></br> developed nation.
             We aim to build a foundation of trust and progress <br></br>by focusing on sustainable growth,
@@ -138,18 +137,17 @@ function Home() {
 
         </div>
 
-        <div className="images" style={{ backgroundImage: "url(/images/18.svg)" }}>
-          <h6>Nation's First Trust</h6>
-          <h5>Dedicated towards promoting Arts & Culture</h5>
+        <div className="images">
+          <img src='images/homein.svg'></img>
+        
         </div>
 
       </div>
       <div className="container1">
 
-
         <div className='join-commu'>
           <h5>Join Our Community</h5>
-          <h1>Get involved into the charity<br></br>projects.</h1>
+          <h4>Get involved into the charity projects.</h4>
           <h4>Join our foundation today and start building the <br></br>future of our society and the community of<br></br> tomorrow.</h4>
 
           <div className="link1">
@@ -160,7 +158,9 @@ function Home() {
           </div>
 
         </div>
+        <img src='images/homejoin.svg'></img>
       </div>
+
       <div className="background-image">
         <div className="backgroun-image-head">
           <h5>Testimonials</h5>

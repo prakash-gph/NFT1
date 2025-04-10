@@ -1,6 +1,6 @@
 .slider-container {
     position: relative;
-    height: 580px; 
+    height: 580px;
     max-width: 100%;
     margin: 0 auto;
     overflow: hidden;
@@ -87,8 +87,9 @@
     .slider-container {
         height: 430px;
     }
-    .slide {    
-        background-position-y:-30px;
+
+    .slide {
+        background-position-y: -30px;
     }
 
 }
@@ -97,11 +98,12 @@
     .slider-container {
         height: 350px;
     }
+
     .slide {
-        
-        background-position-y:-10px;
+
+        background-position-y: -10px;
     }
-    
+
 
 }
 
@@ -137,6 +139,7 @@
         height: 150px;
     }
 }
+
 @media (max-width:390px) {
     .slider-container {
         height: 110px;
@@ -155,28 +158,14 @@
 
 }
 
-.container-paragraph .paragraph {
-
-    background-color: rgb(235, 181, 111);
-    border-radius: 10px;
-
-}
-
-.container-paragraph .paragraph h6 {
-    font-size: 30px;
-    font-weight: inherit;
-    color: rgb(80, 146, 73);
-    margin: 10px;
-
-}
-
 .container-paragraph .paragraph h1 {
-    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(14, 26, 163);
     margin-left: 25px;
 }
 
 .container-paragraph .paragraph p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
@@ -184,78 +173,38 @@
     font-size: 20px;
 }
 
-.container-paragraph .paragraph p:hover {
-    font-size: 22px;
-    background-color: rgb(238, 163, 12);
-    border-radius: 10px;
-    transition: 0.9s;
-    cursor: default;
-
-}
 
 .images {
 
-    border-radius: 30px;
-    margin-top: 20px;
-    width: 400px;
-    height: 500px;
-
-}
-
-.images h6 {
-
-    margin-right: 240px;
-    margin-left: 10px;
-    padding: 2px;
-    border-radius: 9px;
-    background-color: rgb(208, 98, 20);
-    color: rgb(240, 240, 245);
-    font-size: 15px;
-}
-
-.images h5 {
-
-    font-size: 25px;
-    font-weight: 900;
-    color: rgb(16, 19, 14);
+    width: 500px;
+    height: 100%;
 
 }
 
 .container1 {
-    background-image: url(/images/16.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    width: 100%;
     height: 100%;
-    position: relative;
 }
 
 .join-commu {
-
-    margin-top: 100px;
-    margin-bottom: 110px;
-    border-radius: 30px;
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 200px;
+   
 
 }
 
 .join-commu h5 {
     border-bottom: 2px solid;
     font-size: 20px;
-    margin-top: 20px;
-    color: rgb(3, 249, 229);
+    margin: 10px 0px;
+    color: rgb(50, 151, 53);
     margin-right: 200px;
 }
 
-.join-commu h1 {
-    font-style: initial;
-    margin-top: 12px;
-    font-size: 35px;
-}
 
 .join-commu h4 {
-    margin-top: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 20px;
 
 }
@@ -274,7 +223,7 @@
 }
 
 .join-commu .link2 {
-    margin-top: 110px;
+    margin-top: 100px;
 }
 
 .join-commu .link2 .a {
@@ -309,20 +258,6 @@
     line-height: 40px;
     box-shadow: 1px 10px 7px 5px rgb(169, 150, 186);
 }
-
-/* 
-.background-image::before {
-    background-image: url("/images/testimonials.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0.8;
-} */
 
 .backgroun-image-head h5 {
     margin-top: 0px;
@@ -410,23 +345,107 @@
     .input-head h3 {
         font-size: 25px;
     }
-}
 
-@media (max-width:600px) {
+    .join-commu {
+
+        margin-left: 20px;
+        margin-top: 95px;
+
+    }
+
+    .join-commu h5 {
+
+        font-size: 15px;
+        margin: 10px 0px;
+        margin-right: 200px;
+    }
+
+
+    .join-commu h4 {
+
+        font-size: 16px;
+
+    }
+
+    .join-commu .link1 {
+        margin-top: 40px;
+    }
 
     .join-commu .link1 .a {
 
         font-size: 15px;
-        padding: 25px 52px;
-        
+        padding: 15px 25px;
+    }
+
+    .join-commu .link2 {
+        margin-top: 50px;
     }
 
     .join-commu .link2 .a {
+
         font-size: 15px;
-        padding: 25px 62px;
+        padding: 15px 32px;
 
     }
 
+}
+
+@media (max-width:750px) {
+    .join-commu {
+
+        margin-top: 60px;
+
+    }
+
+}
+
+@media (max-width:670px) {
+
+    .container1 {
+
+        background-size: cover;
+        display: flex;
+        flex-wrap: wrap;
+        height: 400px;
+    }
+
+    .join-commu {
+        margin-top: 126px;
+
+    }
+
+    .join-commu h5 {
+
+        font-size: 12px;
+        margin-right: 250px;
+    }
+
+    .join-commu h4 {
+
+        font-size: 10px;
+
+    }
+
+    .join-commu .link1 {
+        margin-top: 30px;
+    }
+
+    .join-commu .link2 {
+        margin-top: 25px;
+    }
+
+    .join-commu .link1 .a {
+
+        font-size: 12px;
+        padding: 10px 20px;
+
+    }
+
+    .join-commu .link2 .a {
+        font-size: 12px;
+        padding: 10px 27px;
+
+    }
 
     .container-paragraph {
         font-size: 12px;
@@ -434,17 +453,6 @@
 
     .paragraph {
         padding: 10px;
-    }
-
-    .images h6 {
-        font-size: 15px;
-    }
-
-    .images h5 {
-        font-size: 19px;
-    }
-    .join-commu h4{
-        font-size: 18px;
     }
 
     .input-box {
@@ -477,14 +485,10 @@
         margin-left: 85px;
     }
 
-    .join-commu h1 {
-        font-size: 25px;
-    }
-
 
 }
 
-@media (max-width:417px) {
+@media (max-width:480px) {
 
     .input-box .btn1 {
         width: 250px;
@@ -499,21 +503,31 @@
 
     .join-commu .link1 .a {
 
-        font-size: 13px;
-        padding: 21px 52px;
-        
+        font-size: 9px;
+        padding: 8px 11px;
+
+    }
+
+    .join-commu .link1 {
+
+        margin-top: 10px;
+
+    }
+
+    .join-commu .link2 {
+
+        margin-top: 10px;
+
     }
 
     .join-commu .link2 .a {
-        font-size: 13px;
-        padding: 21px 60px;
+        font-size: 9px;
+        padding: 8px 17px;
 
     }
-    .join-commu h1 {
-        font-size: 19px;
-    }
-    .join-commu h4{
-        font-size: 11px;
+
+    .join-commu h4 {
+        font-size: 8px;
     }
 
     .container-paragraph {
@@ -523,6 +537,31 @@
     .paragraph {
         padding: 10px;
     }
+}
 
-    
+@media (max-width:394px) {
+    .join-commu{
+        margin-top: 145px;
+    }
+
+    .join-commu h5 {
+        font-size: 8px;
+        margin: 15px 0px 0px;
+        border: none;
+    }
+    .join-commu h4 {
+        font-size: 8px;
+        
+    }
+    .join-commu .link2 .a {
+        font-size: 9px;
+        padding: 5px 12px;
+
+    }
+    .join-commu .link1 .a {
+        font-size: 9px;
+        padding: 5px 7px;
+
+    }
+
 }
