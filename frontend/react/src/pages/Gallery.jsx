@@ -15,14 +15,14 @@ const Gallery = () => {
 
 
       <div className="uploading-Images">
-        <img src='images/sample.jpg' alt='images'></img>
-        <img src='images/sample.jpg' alt='images'></img>
-        <img src='images/sample.jpg' alt='images'></img>
-        <img src='images/sample.jpg' alt='images'></img>
-        <img src='images/sample.jpg' alt='images'></img>
-        <img src='images/sample.jpg' alt='images'></img>
-        <img src='images/sample.jpg' alt='images'></img>
-        <img src='images/sample.jpg' alt='images'></img>
+        <img src='images/5.svg' alt='images'></img>
+        <img src='images/6.svg' alt='images'></img>
+        <img src='images/7.svg' alt='images'></img>
+        <img src='images/5.svg' alt='images'></img>
+        <img src='images/6.svg' alt='images'></img>
+        <img src='images/7.svg' alt='images'></img>
+        <img src='images/5.svg' alt='images'></img>
+        <img src='images/6.svg' alt='images'></img>
         
       </div>
     </div>

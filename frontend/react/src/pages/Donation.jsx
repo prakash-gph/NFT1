@@ -169,11 +169,8 @@ const DonationPage = () => {
           gap: "30px"
         }}>
           {Object.keys(descriptions).map((area) => (
-            <label key={area} style={{
-              backgroundColor: "lightblue",
-              display: "flex", justifyItems: "center", gap: "10px", padding: "10px",
-              fontSize: "17px", borderRadius: "30px"
-            }}>
+            <label className="donate-option" key={area} 
+            >
               <input
                 style={{ width: "17px" }}
                 type="radio"

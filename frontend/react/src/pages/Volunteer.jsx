@@ -42,9 +42,11 @@ const Volunteer = () => {
         <>
         <ToastContainer/>
             <div className="volunteerImages">
-                <img src='images/3.svg' alt='images'></img>
-                <h1> Become a Volunteer</h1>
+                <img src='images/volunteer.svg' alt='images'></img>
+                
              </div>
+             <h1 className='volunteer-head'> Become a Volunteer</h1>
+
             <div className="volunteer">
                 <div className="volunteer-questions">
                     <h2>Frequently Asked Questions</h2>

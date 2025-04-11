@@ -11,7 +11,7 @@ const Events = () => {
       <div className="first-container">
         <hr></hr>
         <div className="f-container">
-          <img src='images/event1.jpeg' alt='images'></img>
+          <img src='images/5.svg' alt='images'></img>
            <div className="f-container-heading">
             <h2>Vishnu Sahasranama Online Class</h2>
             <p>Batch: 17</p>
@@ -23,7 +23,7 @@ const Events = () => {
         <hr></hr>
 
         <div className="f-container">
-          <img src='images/event1.jpeg' alt='images'></img>
+          <img src='images/6.svg' alt='images'></img>
            <div className="f-container-heading">
             <h2>Vishnu Sahasranama Online Class</h2>
             <p>Batch: 17</p>
@@ -35,7 +35,7 @@ const Events = () => {
         <hr></hr>
 
         <div className="f-container">
-          <img src='images/event1.jpeg' alt='images'></img>
+          <img src='images/7.svg' alt='images'></img>
            <div className="f-container-heading">
             <h2>Vishnu Sahasranama Online Class</h2>
             <p>Batch: 17</p>

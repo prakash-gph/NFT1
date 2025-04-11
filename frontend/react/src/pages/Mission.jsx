@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Mission.css"
-import img from "/images/26.svg"
+import img from "/images/mission-side.svg"
 import { FcCheckmark } from "react-icons/fc";
 
 const Mission = () => {
@@ -16,7 +16,7 @@ const Mission = () => {
 
       <div className="OurMission-Vision">
         <div className="OurMission">
-          <h2>Our Mission & Vision</h2>
+          <h2> Mission & Vision</h2>
           <p><FcCheckmark />Empower Communities – Support social welfare initiatives to uplift underprivileged individuals.</p>
           <p><FcCheckmark /> Promote Education & Healthcare – Ensure access to quality education and medical facilities for all.</p>
           <p><FcCheckmark />Environmental Sustainability – Advocate for tree plantation, clean energy, and ecological balance </p>
@@ -28,7 +28,7 @@ const Mission = () => {
       
               </div>
         <div className="image">
-          <h5 className='image-head'>Mission to serve, vision to succeed</h5>
+          <h5 className='image-head'>Mission for serve, Vision for succeed</h5>
           <img src={img} alt="images" />
         </div>
       </div>

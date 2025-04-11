@@ -109,16 +109,24 @@ tr:hover {
    }
 
     .about-paragraph h2 {
-        font-size: 26px;
+        font-size: 20px;
     }
 
     .about-paragraph p {
-        font-size: 15px;
+        font-size: 12px;
     }
 
     .table1 h1 {
-        font-size: 35px;
+        font-size: 25px;
     }
+    .table2 {
+      
+        margin-top: 120px;
+    }
+    .tables td {
+        font-size: 15px;
+    }
+
 
 }
 

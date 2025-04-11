@@ -37,12 +37,12 @@ const About = () => {
         <h1>NGO Information</h1>
         <div className="table2">
           <table className='tables'>
-            <thead>
+            {/* <thead>
               <tr>
                 <th></th>
                 <th></th>
               </tr>
-            </thead>
+            </thead> */}
             <tbody>
               <tr>
                 <td>Trust Registration No & Date</td>

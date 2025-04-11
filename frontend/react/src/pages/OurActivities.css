@@ -45,39 +45,75 @@
 }
 
 .activities-image {
-
-
+    position: absolute;
+    margin-left: 60%;
     display: flex;
-    padding: 70px;
+    padding: 37px;
     background-color: rgb(220, 238, 220);
-    margin-left: 38%;
     border-radius: 50px;
-    box-shadow: 2px 8px 10px 12px rgb(194, 194, 216);
+    box-shadow: 2px 5px 10px 5px rgb(194, 194, 216);
 
 
 }
 
 .activities-image img {
-    border-radius: 20px;
-    width: 100%;
+    border-radius: 10px;
+    width: 350px;
+}
 
+@media (max-width:1220px) {
+
+    .activities-image {
+        position: absolute;
+        margin-left: 70%;
+        padding: 22px;
+
+
+    }
+
+    .activities-image img {
+        border-radius: 10px;
+        width: 150px;
+    }
 }
 
 @media(max-width:950px) {
 
 
+
     .activities-image {
-        padding: 40px;
-        box-shadow: 2px 3px 4px 6px rgb(194, 194, 216);
+
+        border-radius: 15px;
+        position: relative;  
+        right: 150px;
+        padding: 15px;
+
+    }
+
+    .activities-image img {
+        margin-left: 10px;
+        border-radius: 10px;
+        width: 180px;
     }
 }
 
+@media screen and (max-width:830px) {
 
-@media screen and (max-width:800px) {
+
 
     .activities-image {
-        padding: 30px;
+        right: 280px;
+        width: 230px;
+        padding: 15px;
+
     }
+
+    .activities-image img {
+        margin-left: 10px;
+        border-radius: 10px;
+        width: 180px;
+    }
+
 }
 
 @media(max-width:600px) {
@@ -87,17 +123,21 @@
     }
 
     .activities-paragraph .paragraph h2 {
-        font-size: 20px;
+        font-size: 17px;
+    }
+
+    .activities-paragraph .paragraph h3 {
+        font-size: 17px;
     }
 
     .activities-paragraph .paragraph p {
         margin: 10px;
-        font-size: 15px;
+        font-size: 12px;
     }
 
     .activities-image {
         padding: 20px;
-        border-radius: 20px;
+        right: 100px;
         box-shadow: none
     }
 }
@@ -111,11 +151,18 @@
     .activities-paragraph .paragraph p {
         margin: 17px;
         font-size: 14px;
+    }    
+    .activities-image {
+        right: 150px;
+        width: 180px;
+        padding: 15px;
+
     }
 
-    .activities-image {
-        padding: 10px;
-        border-radius: 15px;
+    .activities-image img {
+        margin-left: 10px;
+        width: 130px;
     }
+
 
 }

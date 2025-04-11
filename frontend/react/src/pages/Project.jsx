@@ -1,7 +1,7 @@
 import React from 'react'
-import { FcBookmark} from "react-icons/fc";
+import { FcBookmark } from "react-icons/fc";
 import { FcSportsMode } from "react-icons/fc";
-import image from "/images/21.svg"
+import image from "/images/barat-Mata2.svg"
 import "./OurActivities.css"
 
 const Project = () => {
@@ -9,7 +9,7 @@ const Project = () => {
     <div>
       <div className="picture">
         <img src='images/project.svg' alt='images'></img>
-       
+
       </div>
 
       <h1 className='project-head'>Project</h1>
@@ -20,25 +20,31 @@ const Project = () => {
           <h2>Bharat Needs Projects: The Role of Nation First Trust in<br></br>Driving Development</h2>
 
           <p>India, or Bharat, stands at the crossroads of unprecedented growth and challenges.
-                        With a rapidly growing population, increasing urbanization, and a surge in 
-                        technological advancements, the country requires structured and impactful projects
-                        to sustain its progress. Recognizing this urgent need, Nation First Trust is stepping
-                        forward to bring transformational change by initiating and supporting projects that
-                        address critical sectors of development.</p>
+            With a rapidly growing population, increasing urbanization, and a surge in
+            technological advancements, the country requires structured and impactful projects
+            to sustain its progress. Recognizing this urgent need, Nation First Trust is stepping
+            forward to bring transformational change by initiating and supporting projects that
+            address critical sectors of development.</p>
 
           <h3> Why Bharat Needs Projects?</h3>
 
           <p><FcSportsMode />Bharat is a land of immense potential, yet it faces several socio-economic<br></br>
             hurdles that hinder its path to becoming a global powerhouse.<br></br>Focused projects are essential for:</p>
 
+            <div className="activities-image">
+         
+         <img src="images/education.svg" alt="image" />
+         </div>
+
           <h3>Infrastructure Development:</h3>
 
           <p><FcSportsMode />Modernized roads, bridges, smart cities,and efficient transport systems to <br></br>facilitate trade and daily life.</p>
-
+         
+         
           <h3>Education & Skill Development:</h3>
 
           <p><FcSportsMode />Quality education and vocational training for youth to contribute effectively <br></br>to the workforce.</p>
-          
+
           <h3>Employment Generation:</h3>
 
           <p><FcSportsMode />nnovative projects in agriculture, manufacturing, and technology to create<br></br>sustainable job opportunities.</p>
@@ -58,12 +64,12 @@ const Project = () => {
           <h2>The Role of Nation First Trust</h2>
 
           <p>Nation First Trust is committed to spearheading impactful projects that align
-        <br></br>with the vision of a self-reliant and progressive Bharat.<br></br>Our focus areas include:</p>
+            <br></br>with the vision of a self-reliant and progressive Bharat.<br></br>Our focus areas include:</p>
 
-       
-        <div className="activities-image">
-          <img src={image} alt='image' ></img>
-        </div>
+
+          <div className="activities-image">
+            <img src={image} alt='image' ></img>
+          </div>
 
 
           <h3>Economic Upliftment:</h3>

@@ -20,7 +20,7 @@
   flex: 0 0 100%;
   width: 100%;
   height: 100%;
-   
+
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -95,90 +95,115 @@
   color: aquamarine;
 }
 
+.donate-option {
+  background-color:lightblue;
+  display: flex;
+  justify-items: "center";
+
+  
+  gap: 10px;
+  padding: 10px;
+  font-size: 17px;
+  border-radius: 30px;
+ 
+}
+
+
 
 
 @media (max-width:1600px) {
   .slider-container2 {
-      height: 380px;
+    height: 380px;
   }
- 
+
 }
 
 
 @media (max-width:1425px) {
   .slider-container2 {
-      height: 300px;
+    height: 300px;
   }
-  .slide2 {    
-      background-position-y:-20px;
+
+  .slide2 {
+    background-position-y: -20px;
   }
 
 }
 
 @media (max-width:1135px) {
   .slider-container2 {
-      height: 250px;
+    height: 250px;
   }
 
 }
 
 @media (max-width:940px) {
   .slider-container2 {
-      height: 250px;
+    height: 250px;
   }
-  .slide2 {    
-    background-position-x:-140px;
-}
+
+  .slide2 {
+    background-position-x: -140px;
+  }
 
 }
 
 @media (max-width:860px) {
   .slider-container2 {
-      height: 180px;
+    height: 180px;
   }
-  .slide2 {    
-    background-position-x:0px;
-}
 
-@media (max-width:730px) {
+  .slide2 {
+    background-position-x: 0px;
+  }
 
-  .slide2 {    
-    background-position-x:-55px;
-}
+  @media (max-width:730px) {
 
-}
+    .slide2 {
+      background-position-x: -55px;
+    }
+
+  }
 }
 
 @media(max-width:650px) {
-  .slider-container2 {
-      height: 130px;
-      
+
+  .donate-option{
+    font-size: small;
   }
-  .slide2 {    
-    background-position-x:0px;
-}
+  .slider-container2 {
+    height: 130px;
+
+  }
+
+  .slide2 {
+    background-position-x: 0px;
+  }
 
   .left-arrow2,
   .right-arrow2 {
-      font-size: 1rem;
-      padding: 10px;
+    font-size: 1rem;
+    padding: 10px;
   }
 }
 
 @media (max-width:480px) {
   .slider-container2 {
-      height: 110px;
+    height: 110px;
 
   }
-  .slide2 {    
-    background-position-x:-15px;
+
+  .slide2 {
+    background-position-x: -15px;
+  }
 }
-}
+
 @media (max-width:390px) {
   .slider-container2 {
-      height: 100px;
+    height: 100px;
   }
-  .slide2 {    
-    background-position-x:-54px;
-}
+
+  .slide2 {
+    background-position-x: -54px;
+  }
 }
