@@ -33,41 +33,13 @@ const About = () => {
           <img src={image} alt='imges'></img>
         </div>
       </div>
-      <div className="table1">
-        <h1>NGO Information</h1>
-        <div className="table2">
-          <table className='tables'>
-            {/* <thead>
-              <tr>
-                <th></th>
-                <th></th>
-              </tr>
-            </thead> */}
-            <tbody>
-              <tr>
-                <td>Trust Registration No & Date</td>
-                <td>4/44/2021, dated 09/06/2021</td>
-              </tr>
-              <tr>
-                <td>Darpan Unique ID</td>
-                <td>TN/2021/0295794</td>
-              </tr>
-              <tr>
-                <td>Chief Functionary’s Name</td>
-                <td>Dr. V Raghavendran</td>
-              </tr>
-              <tr>
-                <td>Chief Functionary’s Name</td>
-                <td>Dr. V Raghavendran</td>
-              </tr>
-              <tr>
-                <td>Income Tax Exemption Certificate 80G</td>
-                <td>AADTD8335J24CH02, dated 09-08-2024</td>
-              </tr>
-
-            </tbody>
-
-          </table>
+      <div className="information">
+        <h1>Trust Information</h1>
+        <div className="information-chief">
+          <p>R.N: 4192024</p>
+          <p>DUI-TN20250502721</p>
+          <p>Chief Functionary's Name  :  S.Sampangi</p>
+          <p>Chief Functionary's Name  :  S.Yogini M.A.LET</p>
         </div>
       </div>
 

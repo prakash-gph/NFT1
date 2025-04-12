@@ -51,12 +51,13 @@ const Navi = () => {
                   < Link className='a' to="/About">About Us</Link>
                   <Link className='a' to="/Board of turstees">Board of turstees</Link>
                   <Link className='a' to="/Mission">Mission & Vision</Link>
+                  <Link className='a' to="/Become a Volunteer">Volunteer</Link>
                 </div>
               )}
             </li>
             <li><NavLink to="/Project">Project</NavLink></li>
             <li><NavLink to="/Events">Events</NavLink></li>
-            <li><NavLink to= "/Gallery">Gallery</NavLink></li>
+            <li><NavLink to="/Gallery">Gallery</NavLink></li>
             <li><NavLink to="/Contact">Contact</NavLink></li>
             <li><NavLink to="/Donation">Donation</NavLink></li>
           </ul>
@@ -66,19 +67,20 @@ const Navi = () => {
             <li><NavLink to='/'>Home</NavLink></li>
 
             <li onMouseEnter={() => setIsDropdownOpen(true)}
-              onMouseLeave={()=>setIsDropdownOpen(false)}>
+              onMouseLeave={() => setIsDropdownOpen(false)}>
               <p>About<i><GoChevronDown /></i></p>
               {isDropdownOpen && (
                 <div className="dropdown-content">
                   <Link className='a' to="/About">About Us</Link>
                   < Link className='a' to="/Board of turstees">Board of turstees</Link>
                   <Link className='a' to="/Mission">Mission & Vision</Link>
+                  <Link className='a' to="/Become a Volunteer">Volunteer</Link>
                 </div>
               )}
             </li>
             <li><NavLink to="/Project">Project</NavLink></li>
             <li><NavLink to="/Events">Events</NavLink></li>
-            <li><NavLink to= "/Gallery">Gallery</NavLink></li>
+            <li><NavLink to="/Gallery">Gallery</NavLink></li>
             <li><NavLink to="/Contact">Contact</NavLink></li>
             <li><NavLink to="/Donation">Donation</NavLink></li>
           </ul>

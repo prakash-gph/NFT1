@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { FcApproval } from "react-icons/fc";
+
 import "./Donat.css";
 
 const descriptions = {
@@ -156,23 +158,22 @@ const DonationPage = () => {
         </div>
       </div>
 
+      <div className="container">
+        
+        <p><FcApproval/> Select one focus areas from the list below that you wish to support.</p>
+        <p><FcApproval/> Proceed to donation and contribute towards the cause of your choice.</p>
+        <p><FcApproval/> Your generous support helps us deliver lasting change to those in need.</p>
+        <p><FcApproval/> Key Focus Areas of the Trust</p>
 
+      </div>
 
-      <div style={{ margin: "100px 0px" }}>
-        <h3 className="donateHead" style={{
-          fontSize: "30px", color: "rgb(253, 147, 67)",
-          marginBottom: "25px"
-        }}>Focus Areas</h3>
+      <div style={{ margin: "5px 0px" }}>
+        <h3 className="donateHead">Focus Areas</h3>
 
-        <div style={{
-          display: "flex", flexWrap: "wrap",
-          gap: "30px"
-        }}>
+        <div className="focus">
           {Object.keys(descriptions).map((area) => (
-            <label className="donate-option" key={area} 
-            >
+            <label className="donate-option" key={area}>
               <input
-                style={{ width: "17px" }}
                 type="radio"
                 name="focus"
                 value={area}
@@ -185,15 +186,15 @@ const DonationPage = () => {
         </div>
       </div>
 
-      <div>
-        <h3 style={{ fontSize: "35px", color: "rgb(253, 147, 67)" }}>Description</h3>
-        <p style={{ fontSize: "15px" }}>{descriptions[focusArea]}</p>
+      <div className="description">
+        <h3>Description</h3>
+        <p>{descriptions[focusArea]}</p>
+        
       </div>
 
-      <div>
-        <h3 style={{ fontSize: "20px", marginTop: "20px" }}>Enter Amount (₹)</h3>
+      <div className="amount">
+        <h3>Enter Amount (₹)</h3>
         <input
-          style={{ padding: "5px", fontSize: "27px", marginTop: "20px" }}
           type="number"
           placeholder="Enter Amount"
           value={amount}
@@ -201,23 +202,18 @@ const DonationPage = () => {
         />
       </div>
 
-      <div>
-        <h3 style={{ fontSize: "20px", marginTop: "20px" }}>Remarks</h3>
+      <div className="remark">
+        <h3>Remarks</h3>
         <input
-          style={{ fontSize: "23px", marginTop: "30px" }}
           type="text"
           placeholder="Enter remarks"
-          className="border p-2 rounded w-full"
           value={remarks}
           onChange={(e) => setRemarks(e.target.value)}
         />
       </div>
 
       <div className="bt">
-        <button style={{ padding: "15px", fontSize: "20px"
-          ,margin: "70px" , borderRadius:"20px" }} onClick={handlePayment}>
-          Donate
-        </button>
+        <button onClick={handlePayment}>Donate <img src="images/rupee.svg"></img> </button>
       </div>
     </div>
 
