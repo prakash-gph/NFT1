@@ -35,6 +35,7 @@ const Navi = () => {
           <img className="" src={logo} alt='logo'></img>
         </div>
         <div className='title'>
+          <h4>தேசமே ! பிரதானம் !</h4>
           <Link className='a' to='/'>NATION'S FIRST TRUST</Link>
           <p>service to mankind</p>
         </div>
@@ -51,7 +52,7 @@ const Navi = () => {
                   < Link className='a' to="/About">About Us</Link>
                   <Link className='a' to="/Board of turstees">Board of turstees</Link>
                   <Link className='a' to="/Mission">Mission & Vision</Link>
-                  <Link className='a' to="/Become a Volunteer">Volunteer</Link>
+                  <Link className='a' to="/Become a Volunteer">Volunteers</Link>
                 </div>
               )}
             </li>
@@ -74,7 +75,7 @@ const Navi = () => {
                   <Link className='a' to="/About">About Us</Link>
                   < Link className='a' to="/Board of turstees">Board of turstees</Link>
                   <Link className='a' to="/Mission">Mission & Vision</Link>
-                  <Link className='a' to="/Become a Volunteer">Volunteer</Link>
+                  <Link className='a' to="/Become a Volunteer">Volunteers</Link>
                 </div>
               )}
             </li>

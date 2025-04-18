@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { FcApproval } from "react-icons/fc";
+import { toast, ToastContainer } from "react-toastify";
 
 import "./Donat.css";
 
@@ -33,46 +34,7 @@ const descriptions = {
 
 const DonationPage = () => {
 
-  //** slide images*/
-  const slides = [
-    { url: 'images/D1.svg' },
-    { url: 'images/D2.svg' },
-    { url: 'images/D3.svg' },
-    { url: 'images/D4.svg' },
-    { url: 'images/D5.svg' }
-  ];
-
-  const [currentIndex, setCurrentIndex] = useState(0);
-  useEffect(() => {
-    const interval = setInterval(() => {
-      goToNext();
-    }, 3000);
-    return () => clearInterval(interval);
-  }, [currentIndex]);
-
-
-  const goToPrevious = () => {
-    const isFirstSlide = currentIndex === 0;
-    const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
-
-    setCurrentIndex(newIndex);
-  };
-
-  const goToNext = () => {
-    const isLastSlide = currentIndex === slides.length - 1;
-
-    const newIndex = isLastSlide ? 0 : currentIndex + 1;
-
-    setCurrentIndex(newIndex);
-  };
-
-  const goToSlide = (slideIndex) => {
-    setCurrentIndex(slideIndex);
-  };
-
-
-
-
+  
   const [focusArea, setFocusArea] = useState("Education");
   const [amount, setAmount] = useState("");
   const [remarks, setRemarks] = useState("Education"); // Default remark
@@ -85,7 +47,7 @@ const DonationPage = () => {
 
   const handlePayment = () => {
     if (!amount || amount <= 0) {
-      alert("Please enter a valid amount.");
+      toast.warning("Please enter a valid amount.");
       return;
     }
     console.log(amount + " first")
@@ -97,7 +59,7 @@ const DonationPage = () => {
       description: `Donation for ${focusArea} - Remarks: ${remarks}`,
       image: "https://your-logo-url.com/logo.png",
       handler: function (response) {
-        alert(`Payment Successful! Payment ID: ${response.razorpay_payment_id}`);
+        toast.success(`Payment Successful! Payment ID: ${response.razorpay_payment_id}`);
       },
       prefill: {
         name: "PARGUNAN BHARATHI",
@@ -120,55 +82,19 @@ const DonationPage = () => {
   return (
 
     <div>
-
-      <div className="slides2">
-
-        <div className="slider-container2">
-          <div className="slider2">
-            <div className="slides-container2"
-              style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-            >
-              {slides.map((slide, index) => (
-                <div
-                  className="slide2"
-                  key={index}
-                  style={{ backgroundImage: `url(${slide.url})` }}
-
-                ></div>
-              ))}
-            </div>
-          </div>
-
-          {/* Left Arrow */}
-          <div className="left-arrow2" onClick={goToPrevious}>&#10094;</div>
-
-          {/* Right Arrow */}
-          <div className="right-arrow2" onClick={goToNext}>&#10095;</div>
-
-          {/* Dots Indicator */}
-          <div className="dots-container2">
-            {slides.map((_slide, slideIndex) => (
-              <div
-                className={`dot2 ${slideIndex === currentIndex ? 'active' : ''}`}
-                key={slideIndex}
-                onClick={() => goToSlide(slideIndex)}
-              ></div>
-            ))}
-          </div>
-        </div>
-      </div>
+      <ToastContainer/>
 
       <div className="container">
         
-        <p><FcApproval/> Select one focus areas from the list below that you wish to support.</p>
+        <p><FcApproval/> Select focus areas from the list below that you wish to support.</p>
         <p><FcApproval/> Proceed to donation and contribute towards the cause of your choice.</p>
         <p><FcApproval/> Your generous support helps us deliver lasting change to those in need.</p>
-        <p><FcApproval/> Key Focus Areas of the Trust</p>
+        
 
       </div>
 
       <div style={{ margin: "5px 0px" }}>
-        <h3 className="donateHead">Focus Areas</h3>
+        <h3 className="donateHead">Key Focus Areas of the Trust</h3>
 
         <div className="focus">
           {Object.keys(descriptions).map((area) => (
@@ -203,7 +129,7 @@ const DonationPage = () => {
       </div>
 
       <div className="remark">
-        <h3>Remarks</h3>
+        <h3>Donation Details</h3>
         <input
           type="text"
           placeholder="Enter remarks"

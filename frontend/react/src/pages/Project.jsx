@@ -1,16 +1,100 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { FcBookmark } from "react-icons/fc";
 import { FcSportsMode } from "react-icons/fc";
 import image from "/images/barat-Mata2.svg"
 import "./OurActivities.css"
 
+
+
+
 const Project = () => {
+
+
+
+  //** slide images*/
+  const slides = [
+    { url: 'images/D1.svg' },
+    { url: 'images/D2.svg' },
+    { url: 'images/D3.svg' },
+    { url: 'images/D4.svg' },
+    { url: 'images/D5.svg' },
+    { url: 'images/project.svg' }
+  ];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      goToNext();
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [currentIndex]);
+
+
+  const goToPrevious = () => {
+    const isFirstSlide = currentIndex === 0;
+    const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
+
+    setCurrentIndex(newIndex);
+  };
+
+  const goToNext = () => {
+    const isLastSlide = currentIndex === slides.length - 1;
+
+    const newIndex = isLastSlide ? 0 : currentIndex + 1;
+
+    setCurrentIndex(newIndex);
+  };
+
+  const goToSlide = (slideIndex) => {
+    setCurrentIndex(slideIndex);
+  };
+
+
   return (
     <div>
-      <div className="picture">
+
+      <div className="slides2">
+
+        <div className="slider-container2">
+          <div className="slider2">
+            <div className="slides-container2"
+              style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+            >
+              {slides.map((slide, index) => (
+                <div
+                  className="slide2"
+                  key={index}
+                  style={{ backgroundImage: `url(${slide.url})` }}
+
+                ></div>
+              ))}
+            </div>
+          </div>
+
+          {/* Left Arrow */}
+          <div className="left-arrow2" onClick={goToPrevious}>&#10094;</div>
+
+          {/* Right Arrow */}
+          <div className="right-arrow2" onClick={goToNext}>&#10095;</div>
+
+          {/* Dots Indicator */}
+          <div className="dots-container2">
+            {slides.map((_slide, slideIndex) => (
+              <div
+                className={`dot2 ${slideIndex === currentIndex ? 'active' : ''}`}
+                key={slideIndex}
+                onClick={() => goToSlide(slideIndex)}
+              ></div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+
+      {/* <div className="picture">
         <img src='images/project.svg' alt='images'></img>
 
-      </div>
+      </div> */}
 
       <h1 className='project-head'>Project</h1>
 
@@ -31,16 +115,16 @@ const Project = () => {
           <p><FcSportsMode />Bharat is a land of immense potential, yet it faces several socio-economic<br></br>
             hurdles that hinder its path to becoming a global powerhouse.<br></br>Focused projects are essential for:</p>
 
-            <div className="activities-image">
-         
-         <img src="images/education.svg" alt="image" />
-         </div>
+          <div className="activities-image">
+
+            <img src="images/education.svg" alt="image" />
+          </div>
 
           <h3>Infrastructure Development:</h3>
 
           <p><FcSportsMode />Modernized roads, bridges, smart cities,and efficient transport systems to <br></br>facilitate trade and daily life.</p>
-         
-         
+
+
           <h3>Education & Skill Development:</h3>
 
           <p><FcSportsMode />Quality education and vocational training for youth to contribute effectively <br></br>to the workforce.</p>
