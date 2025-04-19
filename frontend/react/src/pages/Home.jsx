@@ -155,8 +155,8 @@ function Home() {
 
         <div className='join-commu'>
           <h5>Nation's First Trust</h5>
-          <h4>Get involved in our social welfare and charity initiatives</h4>
-          <h4>Join our foundation today and start building the<br></br>
+          <h4>Get involved in our social welfare and charity<br></br>initiatives</h4>
+          <h4>Join our foundation today and start building<br></br> the
           future of our society.</h4>
 
           <div className="link1">
