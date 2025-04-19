@@ -1,20 +1,12 @@
 import React from 'react'
-import {Link} from "react-router-dom"
-import {FaFacebook,FaInstagram, FaYoutube} from "react-icons/fa"
+import { Link } from "react-router-dom"
+import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa"
 import "../footer/footer.css"
 
 const Footer = () => {
     return (
         <div className='fo'>
             <footer>
-                {/* <div className='foote-col'>
-                    <h4>Dharma Seva Trust</h4>
-                    <p>(Registered Charitable Trust)<br></br><br></br>
-                        16/11, E-Block, Udhayam Enclave,<br></br>
-                        Dr. Natesan Salai, Ashok Nagar,<br></br>
-                        Chennai - 600 083
-                        Tamil Nadu, India</p>   
-                </div> */}
                 <div className='foote-col'>
                     <h4>Information</h4>
                     <ul>
@@ -27,28 +19,28 @@ const Footer = () => {
                     </ul>
 
                 </div>
-               
+
                 <div className='foote-col'>
                     <h4>Contact Information</h4>
                     <h5>Mobile: +91-7904154189</h5>
                     <h5>Email: info@nationfirsttrust.in</h5>
                     <h5>Website: www.nationfirsttrust.in</h5>
                     <div className='foot-icon'>
-                    <Link to='#'><FaFacebook/></Link>
-                    <Link to='#'><FaInstagram/></Link>
-                    <Link to='#'><FaYoutube/></Link>
-                </div>
+                        <Link className='a' to='#'><FaFacebook /></Link>
+                        <Link className='a' to='#'><FaInstagram /></Link>
+                        <Link className='a' to='#'><FaYoutube /></Link>
+                    </div>
                 </div>
             </footer>
             <div className='copy'>
-                <div style={{fontSize:"15px"}}>
+                <div style={{ fontSize: "15px" }}>
                     <h6>Copyright © Nation's First Trust - All Rights Reserved</h6>
                 </div>
                 <div className="privacy-policy">
-                    <Link to='#'>Privacy policy </Link>-------
-                    <Link to='#'>Terms & Conditions</Link>
+                    <Link className="a" to='#'>Privacy policy </Link>-------
+                    <Link className='a' to='#'>Terms & Conditions</Link>
                 </div>
-                </div>
+            </div>
 
         </div>
     )

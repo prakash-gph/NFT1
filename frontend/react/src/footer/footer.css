@@ -44,7 +44,9 @@ footer {
 .foote-col li {
     padding: 2px;
     margin: 2px;
-
+}
+.foote-col .a{
+color: rgb(25, 0, 255);
 }
 
 .foote-col li :hover {
@@ -64,6 +66,7 @@ footer {
 
 .foot-icon .a {
     margin: 15px;
+   
 }
 
 .foot-icon .a :hover {

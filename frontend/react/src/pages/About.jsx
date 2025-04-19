@@ -15,19 +15,32 @@ const About = () => {
 
       <div className="about">
         <div className="about-paragraph">
-          <h2>ABOUT THE ORGANISATION:</h2>
+          <h2>ABOUT THE ORGANISATION:-</h2>
 
-          <p><FcAbout /> Bharat's culture is the lifeblood of the nation. It is evident that to protect Bharat, we must <br></br>first nourish its culture.
-            If Bharat's culture fades away within its borders, and if Hindu <br></br>society ceases to exist, it would be inappropriate
-            to refer to the mere <br></br>geographical entity that remains as Bharat-India.</p>
+          <p><FcAbout />Bharat's culture is its lifeblood — a timeless source of identity, unity, and strength.
+            <br></br>To truly preserve the spirit of Bharat,
+            we must first nurture its cultural roots.<br></br>
+            If the richness of our culture fades within our own borders,
+            and if Hindu society<br></br> is no longer upheld, then what remains would
+            merely be a geographical expression<br></br> not the true Bharat-India we revere.<br></br>
+          </p>
 
-          <p><FcAbout /> Geographical boundaries alone do not constitute a nation. It is essential for society to be vigilant <br></br>and organized
-            so that no one would dare to undermine our values and honor. Strength arises<br></br> from organization. Therefore,
-            it is the duty of every individual to contribute to the<br></br> consolidation of Bharat's society.</p>
 
-          <p><FcAbout /> To develop and nurture an appreciation of Indian arts and culture through
-            educational<br></br> programmes, cultural orientation programmes, and outreach
-            activities for children and<br></br> young people.</p>
+          <p><FcAbout />Geographical boundaries alone do not define a nation. It is the shared values<br></br>
+            traditions, and collective spirit of the people that breathe life into a country.<br></br>
+            Therefore, it is vital for our society to remain vigilant, united,
+            and well-organized<br></br> for from unity comes strength. When we stand together in purpose and pride
+            <br></br> no force can undermine our honor or our heritage.</p>
+
+
+          <p><FcAbout />It is the responsibility of every individual to contribute to the strengthening <br></br>and
+            consolidation of Bharat’s social fabric. One meaningful path is through <br></br> fostering appreciation
+            for Indian arts and culture. By promoting educational <br></br>programs, cultural orientation sessions,
+            and outreach activities for children<br></br> and youth,we can inspire a deep connection to our roots
+            and ensure that <br></br>our legacy lives on for generations to come.
+
+          </p>
+
         </div>
         <div className="image">
           <img src={image} alt='imges'></img>

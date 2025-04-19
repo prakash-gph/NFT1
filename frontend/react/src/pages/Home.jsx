@@ -6,6 +6,7 @@ import "./Home.css"
 
 function Home() {
   const slides = [
+    { url: 'images/slide0.svg' },
     { url: 'images/slide1.svg' },
     { url: 'images/slide2.svg' },
     { url: 'images/slide3.svg' },
@@ -124,20 +125,20 @@ function Home() {
             We aim to build a foundation of trust <br></br>  by focusing on sustainable growth,community empowerment
             <br></br> and innovation.  Our initiatives are designed to enhance social welfare.
           </p>
-          
+
           <p>Bharat, a land of rich heritage and immense potential,stands<br></br> at the cusp of a new era.
-            With its vibrant culture,diverse traditions<br></br>  and strong values. It has long been a  
-           guiding light of selfless service <br></br> and cultural strength.NFT envisions harnessing this strength
-            
-           <br></br> to build a self-reliant and progressive nation.
+            With its vibrant culture,diverse traditions<br></br>  and strong values. It has long been a
+            guiding light of selfless service <br></br> and cultural strength.NFT envisions harnessing this strength
+
+            <br></br> to build a self-reliant and progressive nation.
           </p>
 
           <p>NATION'S FIRST TRUST is a registered Public Charitable Trust.
-          
-           
-           <br></br>  NFT perceives its role as a catalyst in revitalizing cultural sensitivity,<br></br> bridging tradition and modernity in today’s world.</p>
-           
-           <h3>-Nation's First Trust </h3>
+
+
+            <br></br>  NFT perceives its role as a catalyst in revitalizing cultural sensitivity,<br></br> bridging tradition and modernity in today’s world.</p>
+
+          <h3>-Nation's First Trust </h3>
 
 
 
@@ -146,16 +147,17 @@ function Home() {
 
         <div className="images">
           <img src='images/homein.svg'></img>
-        
+
         </div>
 
       </div>
       <div className="container1">
 
         <div className='join-commu'>
-          <h5>Join Our Community</h5>
-          <h4>Get involved into the charity projects.</h4>
-          <h4>Join our foundation today and start building the <br></br>future of our society and the community of<br></br> tomorrow.</h4>
+          <h5>Nation's First Trust</h5>
+          <h4>Get involved in our social welfare and charity initiatives</h4>
+          <h4>Join our foundation today and start building the<br></br>
+          future of our society.</h4>
 
           <div className="link1">
             <Link className="a" to='/Become a volunteer'>Become a Volunteer</Link>
