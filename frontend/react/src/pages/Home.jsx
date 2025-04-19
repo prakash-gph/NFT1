@@ -133,7 +133,7 @@ function Home() {
             <br></br> to build a self-reliant and progressive nation.
           </p>
 
-          <p>NATION'S FIRST TRUST is a registered Public Charitable Trust.
+          <p>NATION'S FIRST TRUST is a registered Charitable Trust.
 
 
             <br></br>  NFT perceives its role as a catalyst in revitalizing cultural sensitivity,<br></br> bridging tradition and modernity in today’s world.</p>

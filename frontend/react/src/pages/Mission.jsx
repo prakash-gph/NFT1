@@ -22,10 +22,11 @@ const Mission = () => {
           <p><FcCheckmark />Environmental Sustainability – Advocate for tree plantation, clean energy, and ecological balance </p>
           <p><FcCheckmark />Cultural & Social Development – Preserve traditions while fostering inclusivity and modern progress.</p>
           <p><FcCheckmark />Support for the Needy – Aid the elderly, disabled, transgender community, and those below the poverty line.</p>
-          <p><FcCheckmark />Nation First Approach – Work towards a self-reliant and progressive India.Equal Opportunities – Build <br></br>a society where everyone has access to education, healthcare, and employment.</p>
+          <p><FcCheckmark />Nation First Approach – Work towards a self-reliant and progressive India.</p>
+          <p><FcCheckmark/>Equal Opportunities – Build a society where everyone has access to education, healthcare, and employment.</p>
           <p><FcCheckmark />Sustainable Growth – Promote long-term social, economic, and environmental development.</p>
-          <p><FcCheckmark />Unity & Harmony – Strengthen national integration and cultural unity. A Better Future for <br></br>All – Ensure dignity, security, and well-being for every citizen.</p>
-      
+          <p><FcCheckmark />Unity & Harmony – Strengthen national integration and cultural unity. </p>
+          <p><FcCheckmark/>A Better Future for All – Ensure dignity, security, and well-being for every citizen.</p>
               </div>
         <div className="image">
           <h5 className='image-head'>Mission for serve, Vision for succeed</h5>
