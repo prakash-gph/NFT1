@@ -174,11 +174,10 @@
 
 .container-paragraph .paragraph p {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    display: flex;
-    flex-wrap: wrap;
     justify-content: left;
     margin: 25px;
     font-size: 20px;
+   
 }
 
 .container-paragraph .paragraph p:hover {

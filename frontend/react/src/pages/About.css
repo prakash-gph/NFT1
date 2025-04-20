@@ -10,7 +10,7 @@
 }
 
 .about-head{
-    color: rgb(14, 26, 163);
+    color: rgb(237, 133, 5);
     text-align: center;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
@@ -47,7 +47,7 @@
 .about-paragraph h2 {
     font-size: xx-large;
     font-weight: bolder;
-    color: rgb(209, 74, 53);
+    color: rgb(14, 26, 163);
     font-family: 'Courier New', Courier, monospace;
 }
 

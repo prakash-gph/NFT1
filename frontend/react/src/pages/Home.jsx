@@ -115,33 +115,24 @@ function Home() {
       </div>
 
 
-
-
       <div className="container-paragraph">
         <div className="paragraph">
           <h1>Who We Are</h1>
-
-          <p>Nation's First Trust (NFT) is dedicated to transforming Bharat<br></br> into a developed nation.
-            We aim to build a foundation of trust <br></br>  by focusing on sustainable growth,community empowerment
-            <br></br> and innovation.  Our initiatives are designed to enhance social welfare.
-          </p>
-
+             <div >
+          <p>Nation's First Trust (NFT) is dedicated to transforming Bharat into<br></br>a developed nation.
+            We aim to build a foundation of trust<br></br>by focusing on sustainable growth,community empowerment
+            <br></br>and innovation.  Our initiatives are designed to enhance social welfare.</p>
+          </div>
+          
           <p>Bharat, a land of rich heritage and immense potential,stands<br></br> at the cusp of a new era.
             With its vibrant culture,diverse traditions<br></br>  and strong values. It has long been a
             guiding light of selfless service <br></br> and cultural strength.NFT envisions harnessing this strength
 
-            <br></br> to build a self-reliant and progressive nation.
-          </p>
+            <br></br> to build a self-reliant and progressive nation.</p>
 
-          <p>NATION'S FIRST TRUST is a registered Charitable Trust.
-
-
-            <br></br>  NFT perceives its role as a catalyst in revitalizing cultural sensitivity,<br></br> bridging tradition and modernity in today’s world.</p>
+          <p>NATION'S FIRST TRUST is a registered Charitable Trust.<br></br>  NFT perceives its role as a catalyst in revitalizing cultural sensitivity,<br></br> bridging tradition and modernity in today’s world.</p>
 
           <h3>-Nation's First Trust </h3>
-
-
-
 
         </div>
 

@@ -34,7 +34,7 @@ const contactInfromation = new mongoose.Schema({
         type:Number,
         require:true,
     },
-    subject:{
+    city:{
         type:String,
         require:true,
     },

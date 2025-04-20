@@ -55,30 +55,30 @@ const Contact = () => {
     name: '',
     email: '',
     mobileNumber: '',
-    subject: '',
+    city: '',
     message: '',
   })
   const [showContactDetails, setShowContactDetails] = useState(false)
   const [showContactTable, setShowContactTable] = useState(true)
   const [showLoader, setShowLoader] = useState(false)
-  const [showVerifyBox, setVerifyBox] = useState(false)
+  // const [showVerifyBox, setVerifyBox] = useState(false)
 
 
   const submitMessage = async (e) => {
     e.preventDefault()
-    const { name, email, subject, message } = data;
+    const { name, email, city, message } = data;
 
     console.log(phoneNumber)
     try {
-      if (!name || !email || !phoneNumber || !subject || !message) {
+      if (!name || !email || !phoneNumber || !city || !message) {
 
         return toast.warning("Fill the all table")
 
       }
-
+      
       setShowLoader(true)
       const { data } = await axios.post("https://nft1-backend.onrender.com/contact-information", {
-        name, email, subject, message, phoneNumber
+        name, email, city, message, phoneNumber
       })
 
       if (data.error) {
@@ -88,10 +88,11 @@ const Contact = () => {
       else {
 
         setData({})
-        toast.success("Successfuly submited verify your otp")
+        toast.success("Successfuly submited ")
         setShowContactTable(false)
         setShowLoader(false)
-        setVerifyBox(true)
+        setShowContactDetails(true)
+        // setVerifyBox(true)
       }
 
     }
@@ -100,34 +101,34 @@ const Contact = () => {
     }
 
   }
-  const [otpValue, setOtpValue] = useState("")
+  // const [otpValue, setOtpValue] = useState("")
 
-  const verify = async (e) => {
-    e.preventDefault()
+  // const verify = async (e) => {
+  //   e.preventDefault()
 
-    try {
-      if (!otpValue) {
-        return toast.warning("fill the Otp box")
-      }
+  //   try {
+  //     if (!otpValue) {
+  //       return toast.warning("fill the Otp box")
+  //     }
 
-      const { data } = await axios.post("https://nft1-backend.onrender.com/verify-otp", { otpValue })
+  //     const { data } = await axios.post("https://nft1-backend.onrender.com/verify-otp", { otpValue })
 
-      if (data.error) {
-        return toast.error(data.error)
-      }
-      else {
-        setOtpValue("")
-        setVerifyBox(false)
-        setShowContactDetails(true)
-        return toast.success("Varification Successfull")
+  //     if (data.error) {
+  //       return toast.error(data.error)
+  //     }
+  //     else {
+  //       setOtpValue("")
+  //       setVerifyBox(false)
+  //       setShowContactDetails(true)
+  //       return toast.success("Varification Successfull")
 
-      }
-    }
-    catch (error) {
+  //     }
+  //   }
+  //   catch (error) {
 
-      return toast.error(`${error.message}, Please reload page.Enter valide Email and Phonenumber`)
-    }
-  }
+  //     return toast.error(`${error.message}, Please reload page.Enter valide Email and Phonenumber`)
+  //   }
+  // }
 
   return (
     <> <ToastContainer />
@@ -178,7 +179,7 @@ const Contact = () => {
                 type="tel"
                 value={phoneNumber}
                 onChange={handlePhoneNumberChange}
-                placeholder={selectedCountry.placeholder}
+                placeholder={"Enter mobile number"}
               />
             </div>
 
@@ -187,8 +188,8 @@ const Contact = () => {
                 Invalid phone number format for {selectedCountry.name}
               </p>
             )}
-            <input type='text' placeholder='Enter subject' value={data.subject || ""}
-              onChange={(e) => setData({ ...data, subject: e.target.value })}></input>
+            <input type='text' placeholder='Enter your city' value={data.city || ""}
+              onChange={(e) => setData({ ...data, city: e.target.value })}></input>
 
             <textarea type='message' placeholder='Write a message' value={data.message || ""}
               onChange={(e) => setData({ ...data, message: e.target.value })}></textarea>
@@ -197,14 +198,14 @@ const Contact = () => {
           </form>
 
         </div>}
-        <div style={{margin:"150px 0px"}}>
+        {/* <div style={{margin:"150px 0px"}}>
 
         {showVerifyBox && <div className='verify'>
           <input value={otpValue} onChange={(e) => setOtpValue(e.target.value)} ></input>
           <button onClick={verify}>Verify-Otp</button>
         </div>}
 
-        </div>
+        </div> */}
       </div>
       <div className="load">
         {showLoader && <div className="loader"></div>}

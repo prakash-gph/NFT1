@@ -1,7 +1,8 @@
 import express, { json } from "express"
 import cors from"cors"
 import dotenv from "dotenv";
-import {routers,contactRouters,volunteerRouters,otpVerifiy} from "./router/urouter.js";
+import {routers,contactRouters,volunteerRouters} from "./router/urouter.js";
+// import {otpVerifiy} from "./router/urouter.js"
 import connectdb from "./database/db.js"
 const app = express()
 dotenv.config()
@@ -12,7 +13,7 @@ app.use(cors())
 app.use(routers)
 app.use(contactRouters)
 app.use(volunteerRouters)
-app.use(otpVerifiy)
+// app.use(otpVerifiy)
 
 
 
