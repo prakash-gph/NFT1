@@ -69,11 +69,37 @@
 
 }
 
-.logo img {
-
-    width: 125px;
-
-}
+.logo {
+    perspective: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .logo img {
+    position: relative;
+    width: 130px;
+    transform-style: preserve-3d;
+    animation: spin 8s linear infinite;
+  }
+  
+ 
+  @keyframes spin {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(360deg);
+    }
+  }
+  
+ 
+  .logo img:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+  }
+  
 
 .title {
     margin-left: 124px;

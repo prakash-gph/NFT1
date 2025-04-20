@@ -45,7 +45,7 @@ const Volunteer = () => {
                 <img src='images/volunteer.svg' alt='images'></img>
                 
              </div>
-             <h1 className='volunteer-head'> Become a Volunteer</h1>
+             <h1 className='volunteer-head'> Volunteer</h1>
 
             <div className="volunteer">
                 <div className="volunteer-questions">
@@ -54,7 +54,7 @@ const Volunteer = () => {
                      <p>Kindly fill out the ‘volunteer form’ available
                        on this page.<br></br> Thereafter our team will assist you further.</p>
                      <h3>How much time do I have to devote as a volunteer?</h3>
-                     <p>Information will be available Soon</p>
+                     <p>We always welcome</p>
 
                 </div>
                 <div className="volunteerForm">

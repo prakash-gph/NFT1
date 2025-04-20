@@ -46,7 +46,7 @@ const Board = () => {
         <div className='row1' >
           <img src='images/photo/Thirupathi.R.svg' alt='image'></img>
           <h4 >R.Thirupathi  B.E Aeronautical</h4>
-          <p style={{ textAlign: "center" }}>DeputySecretary / Trustee</p>
+          <p style={{ textAlign: "center" }}>Deputy Secretary / Trustee</p>
         </div>
 
        <div className='row1'>

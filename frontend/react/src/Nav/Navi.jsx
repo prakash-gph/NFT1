@@ -50,9 +50,9 @@ const Navi = () => {
               {isDropdownOpen && (
                 <div className="dropdown-content">
                   < Link className='a' to="/About">About Us</Link>
-                  <Link className='a' to="/Board of turstees">Board of turstees</Link>
+                  <Link className='a' to="/Board of trustees">Board of trustees</Link>
                   <Link className='a' to="/Mission">Mission & Vision</Link>
-                  <Link className='a' to="/Become a Volunteer">Volunteers</Link>
+                  <Link className='a' to="/Volunteer">Volunteer</Link>
                 </div>
               )}
             </li>
@@ -73,9 +73,9 @@ const Navi = () => {
               {isDropdownOpen && (
                 <div className="dropdown-content">
                   <Link className='a' to="/About">About Us</Link>
-                  < Link className='a' to="/Board of turstees">Board of turstees</Link>
+                  < Link className='a' to="/Board of trustees">Board of trustees</Link>
                   <Link className='a' to="/Mission">Mission & Vision</Link>
-                  <Link className='a' to="/Become a Volunteer">Volunteers</Link>
+                  <Link className='a' to="/Volunteer">Volunteers</Link>
                 </div>
               )}
             </li>

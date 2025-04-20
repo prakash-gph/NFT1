@@ -10,6 +10,7 @@
 }
 
 .volunteer-head {
+    margin-top: 5px;
     text-align: center;
     color: rgb(77, 147, 73);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -120,7 +121,7 @@
 @media(max-width:950px) {
 
 
-    .volunteer-head{
+    .volunteer-head {
         font-size: 18px;
     }
 }
@@ -172,13 +173,14 @@
 
 @media(max-width:441px) {
 
-    .volunteer .volunteer-questions{
+    .volunteer .volunteer-questions {
         padding: 10px;
     }
 
-    .volunteer-head{
+    .volunteer-head {
         font-size: 12px;
     }
+
     .volunteerImages h1 {
         font-size: 30px;
         margin-top: 30px;

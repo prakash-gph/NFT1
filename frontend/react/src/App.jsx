@@ -26,9 +26,9 @@ function App() {
       <Route path='Project' element={<Project />} />
       <Route path='Events' element={<Events />} />
       <Route path='Donation' element={<Donation />} />
-      <Route path='Become a Volunteer' element={<Volunteer />}></Route>
+      <Route path='Volunteer' element={<Volunteer />}></Route>
       <Route path='Mission' element={<Mission />}></Route>
-      <Route path='Board of turstees' element={<Board />}></Route>
+      <Route path='Board of trustees' element={<Board />}></Route>
       <Route path='Gallery' element={<Gallery/>}></Route>
       <Route path='*' element={<NotFound />} /></Route>
 

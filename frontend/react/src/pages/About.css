@@ -10,7 +10,7 @@
 }
 
 .about-head{
-    color: rgb(176, 127, 43);
+    color: rgb(14, 26, 163);
     text-align: center;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
@@ -28,7 +28,7 @@
 }
 
 .about {
-    margin-top: 150px;
+    margin-top: 100px;
     margin-bottom: 100px;
     display: flex;
     flex-wrap: wrap;
@@ -38,7 +38,7 @@
 }
 
 .about-paragraph {
-    margin: 60px 0px;
+    margin: 0px 0px;
     padding: 20px;
     border-radius: 25px;
    
