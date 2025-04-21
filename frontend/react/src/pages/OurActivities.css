@@ -194,14 +194,6 @@
   }
 
 
-
-.picture {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-
-}
-
 .project-head {
     text-align: center;
     color: rgb(62, 135, 20);

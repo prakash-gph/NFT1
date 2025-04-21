@@ -1,13 +1,18 @@
 import React, { useEffect, useState } from 'react'
-import { FcBookmark } from "react-icons/fc";
-import { FcSportsMode } from "react-icons/fc";
-import image from "/images/barat-Mata2.svg"
+// import { FcBookmark } from "react-icons/fc";
+// import { FcSportsMode } from "react-icons/fc";
+// import image from "/images/barat-Mata2.svg"
 import "./OurActivities.css"
+
+
+ 
 
 
 
 
 const Project = () => {
+
+
 
 
 
@@ -91,13 +96,16 @@ const Project = () => {
       </div>
 
 
-      {/* <div className="picture">
-        <img src='images/project.svg' alt='images'></img>
-
-      </div> */}
 
       <h1 className='project-head'>Project</h1>
 
+    
+
+
+
+
+
+     { /*
       <div className="activities-paragraph">
         <div className="paragraph">
 
@@ -184,7 +192,7 @@ const Project = () => {
 
         </div>
       </div>
-
+     */}
 
     </div>
   )
