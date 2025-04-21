@@ -58,7 +58,7 @@ const Contact = () => {
     city: '',
     message: '',
   })
-  const [showContactDetails, setShowContactDetails] = useState(false)
+  const [showContactDetails, setShowContactDetails] = useState(true)
   const [showContactTable, setShowContactTable] = useState(true)
   const [showLoader, setShowLoader] = useState(false)
   // const [showVerifyBox, setVerifyBox] = useState(false)
@@ -143,14 +143,22 @@ const Contact = () => {
         {showContactDetails && <div className="contact-information">
 
           <h2>Contact Information</h2>
-          <h3>Address:</h3>
+
+          <p>Mobile: +91-7598378989</p>
+          <p>Email: nft.rss.ind@gmail.com</p>
+          <p>Call us: 04179-295781</p>
+          <h5>Address:</h5>
           <p>No.25, Tholkaran Vattam, Nayanacheruvu,<br></br>
             Natrampalli, Tirupattur, Tamilnadu,
-            India. Postal code-635852,Phone:04179-295781</p>
-          <h3>Email:</h3>
-          <h6> nft.rss.ind@gmail.com</h6>
-          <h3>Call us:</h3>
-          <h5>04179-295781</h5>
+            India.<br></br>Postal code-635852,Phone:04179-295781</p>
+         <h5>Contact person's:</h5>
+         <p> President: Mr.S.Sampangi</p>
+         <p>Mobile:+919952509559</p>
+         <p>Admin: Mr.M.Ramesh B.Tech</p>
+         <p>Mobile: +919597357250</p>
+         
+         
+          <h5></h5>
         </div>}
         {showContactTable && <div className="contact-message">
 
