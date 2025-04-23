@@ -95,7 +95,7 @@ const Project = () => {
       <h1 className='project-head'>Project</h1>
 
       <div className="pdf-link">
-        <Link to = "/src/assets/nft.pdf" target="_blank" rel="noopener noreferrer">
+        <Link to = "https://nft1-frontend.onrender.com/src/assets/nft.pdf" target="_blank" rel="noopener noreferrer">
           <button className="open-pdf-button">NATION'S FIRST TRUST
             <li></li>CLIK TO VIEW </button>
         </Link>

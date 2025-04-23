@@ -31,7 +31,7 @@ function App() {
       <Route path='Mission' element={<Mission />} />
       <Route path='Board of trustees' element={<Board />} />
       <Route path='Gallery' element={<Gallery />} />
-      <Route path='/src/assets/nft.pdf' element={pdf} />
+      <Route path='pdf' element={pdf} />
       <Route path='*' element={<NotFound />} />
 </Route>
       ))
