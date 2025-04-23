@@ -18,7 +18,7 @@
 
 .dropdown-content .a:hover {
     background-color: rgb(241, 218, 205);
-    transition-duration: 1.3s;
+    transition-duration: 0.8s;
 }
 
 .navbar {
@@ -37,18 +37,23 @@
 .nav-link p {
     cursor: pointer;
     font-size: 22px;
-    color: #6d3ba6;
+    color: rgb(14, 26, 163);
     display: flex;
 }
 
+.nav-link li {
+    color:rgb(14, 26, 163);
+}
+
 .nav-link li :hover {
-    color: rgb(249, 102, 11);
+    color: rgb(244, 98, 0);
 
 }
 
 .nav-link {
     font-size: 24px;
     margin-left: 0px;
+
 }
 
 .navbar li {
@@ -56,25 +61,22 @@
     margin: 17px;
 }
 
-.nav-link .dona span{
-    color: #f7f7f7;
+ .dona span{
+    
+    color: #ffffff;
+    
 }
 
-.nav-link .dona span:hover{
-    color: #f8f8f8;
-
-}
-.nav-link .dona {
+.dona {
    
     background-color: rgb(245, 6, 45);
-    padding: 10px;
+    padding: 6px 5px 10px 8px;
     border-radius: 15px;
     margin-left: 15px;
     animation: heartbeat 10s infinite;
     transform-origin: center;
     display: inline-block;
-
-
+    
 
 }
 @keyframes heartbeat {
@@ -148,6 +150,7 @@
 
 .title h4 {
     color: #eb5823;
+    font-size: medium;
 }
 
 .title .a {
@@ -248,7 +251,6 @@
         top: 130px;
         width: 100%;
         background-color: white;
-
         background-color: rgba(255, 255, 255, 0.4);
         -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(10px);
@@ -272,7 +274,7 @@
         background-color: rgb(240, 229, 221);
         border-radius: 10px;
         padding: 8px;
-        transition: 0.5s;
+        transition: 0.8s;
     }
 
 }

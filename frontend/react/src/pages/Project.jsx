@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom';
 // import { FcBookmark } from "react-icons/fc";
 // import { FcSportsMode } from "react-icons/fc";
 // import image from "/images/barat-Mata2.svg"
+
 import "./OurActivities.css"
 
 
@@ -16,7 +18,7 @@ const Project = () => {
     { url: 'images/D3.svg' },
     { url: 'images/D4.svg' },
     { url: 'images/D5.svg' },
-    { url: 'images/project.svg' }
+    { url: 'images/D6.svg' }
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -93,10 +95,10 @@ const Project = () => {
       <h1 className='project-head'>Project</h1>
 
       <div className="pdf-link">
-        <a href="src\assets\nft.pdf" target="_blank" rel="noopener noreferrer">
+        <Link to = "/src/assets/nft.pdf" target="_blank" rel="noopener noreferrer">
           <button className="open-pdf-button">NATION'S FIRST TRUST
             <li></li>CLIK TO VIEW </button>
-        </a>
+        </Link>
 </div>
 
         { /*

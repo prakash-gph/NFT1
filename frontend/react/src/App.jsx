@@ -13,6 +13,7 @@ import Volunteer from './pages/Volunteer'
 import Mission from './pages/Mission'
 import Board from './pages/Board'
 import Gallery from './pages/Gallery'
+import pdf from '/src/assets/nft.pdf'
 
 
 function App() {
@@ -26,22 +27,24 @@ function App() {
       <Route path='Project' element={<Project />} />
       <Route path='Events' element={<Events />} />
       <Route path='Donation' element={<Donation />} />
-      <Route path='Volunteer' element={<Volunteer />}></Route>
-      <Route path='Mission' element={<Mission />}></Route>
-      <Route path='Board of trustees' element={<Board />}></Route>
-      <Route path='Gallery' element={<Gallery/>}></Route>
-      <Route path='*' element={<NotFound />} /></Route>
-
-  ))
-  return (
-
-
-    <RouterProvider router={router}>
-
-    </RouterProvider>
+      <Route path='Volunteer' element={<Volunteer />} />
+      <Route path='Mission' element={<Mission />} />
+      <Route path='Board of trustees' element={<Board />} />
+      <Route path='Gallery' element={<Gallery />} />
+      <Route path='/src/assets/nft.pdf' element={pdf} />
+      <Route path='*' element={<NotFound />} />
+</Route>
+      ))
+      
+      return (
 
 
-  )
+      <RouterProvider router={router}>
+
+      </RouterProvider>
+
+
+      )
 
 }
-export default App
+      export default App
