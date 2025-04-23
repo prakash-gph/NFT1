@@ -87,10 +87,10 @@ const DonationPage = () => {
 
       <div className="container">
         <div>
-        <h3>Donate Process.</h3>
-        <p><FcApproval /> Select focus areas from the list below that you wish to support.</p>
-        <p><FcApproval /> Proceed to donation and contribute towards the cause of your choice.</p>
-        <p><FcApproval /> Your generous support helps us deliver lasting change to those in need.</p>      
+          <h3>Donate Process.</h3>
+          <p><FcApproval /> Select focus areas from the list below that you wish to support.</p>
+          <p><FcApproval /> Proceed to donation and contribute towards the cause of your choice.</p>
+          <p><FcApproval /> Your generous support helps us deliver lasting change to those in need.</p>
         </div>
         <div className="container-image">
           <img src="images/donate-side.svg" alt="image"></img>
@@ -150,22 +150,23 @@ const DonationPage = () => {
         <h6>UNION BANK OF INDIA </h6>
         <h6>Account Number: 333802010461947</h6>
         <h6>IFSC code: UBIN0533386</h6>
+        <h6>Branch Code: 533386</h6>
+        <h6>MICR Code: 635026103</h6>
         <h6>Natrampalli branch</h6>
         <hr />
-        <h4>Address:</h4>
-        <p>69/3, Main Road, Natrampalli,Dist. Vellore, Tamil Nadu, PIN - 635852</p>
-        <h4>State:</h4>
-        <p>Tamil Nadu</p>
+        <h4>Bank Address:</h4>
+        <p>69/3, Main Road, Natrampalli,Dist. Vellore, Tamil Nadu, Post Box No - 635852</p>
         <h4>District:</h4>
         <p> Vellore "Union Bank of India in "Vellore" District</p>
-        <h4>Branch:</h4>
+        <h4>Branch Located:</h4>
         <p>Natrampalli</p>
-        <h4>IFSC code:</h4>
+        <h4>State:</h4>
+        <p>Tamil Nadu</p>
+        <h4>Country:</h4>
+        <p>India</p>
+        <h4>IFSC Code:</h4>
         <p>UBIN0533386 (used for RTGS, IMPS and NEFT transactions)</p>
-        <h4>Branch Code:</h4>
-        <p>Last six characters of IFSC Code represent Branch code</p>
-        <h4>MICR Code:</h4>
-        <p>635026103</p>
+        
       </div>
 
 

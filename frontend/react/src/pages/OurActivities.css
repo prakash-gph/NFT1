@@ -1,357 +1,401 @@
-
-
 .slider-container2 {
-    position: relative;
-    height: 480px;
-    max-width: 100%;
-    margin: 0 auto;
-    overflow: hidden;
-  }
-  
-  .slider2 {
-    height: 100%;
-  }
-  
-  .slides-container2 {
-    display: flex;
-    height: 100%;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .slide2{
-    flex: 0 0 100%;
-    width: 100%;
-    height: 100%;
-  
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  
-  }
-  
-  /* Arrows */
-  .left-arrow2,
-  .right-arrow2 {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 2rem;
-    color: white;
-    cursor: pointer;
-    user-select: none;
-    padding: 18px;
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-  
-  .left-arrow2 {
-    left: 0;
-  }
-  
-  .right-arrow2 {
-    right: 0;
-  }
-  
-  .left-arrow2:hover,
-  .right-arrow2:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-  
-  /* Dots container */
-  .dots-container2 {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 8px;
-  }
-  
-  .dot2 {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.5);
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .dot2.active {
-    background-color: rgba(255, 255, 255, 1);
-  }
-  
-  .dot2:hover {
-    background-color: rgba(255, 255, 255, 0.8);
-  }
+  position: relative;
+  height: 480px;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slider2 {
+  height: 100%;
+}
+
+.slides-container2 {
+  display: flex;
+  height: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.slide2 {
+  flex: 0 0 100%;
+  width: 100%;
+  height: 100%;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+/* Arrows */
+.left-arrow2,
+.right-arrow2 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+  padding: 18px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.left-arrow2 {
+  left: 0;
+}
+
+.right-arrow2 {
+  right: 0;
+}
+
+.left-arrow2:hover,
+.right-arrow2:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Dots container */
+.dots-container2 {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+
+.dot2 {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot2.active {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.dot2:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
 
 @media (max-width:1600px) {
-    .slider-container2 {
-      height: 380px;
-    }
-  
+  .slider-container2 {
+    height: 380px;
   }
-  
-  
-  @media (max-width:1425px) {
-    .slider-container2 {
-      height: 300px;
-    }
-  
+
+}
+
+
+@media (max-width:1425px) {
+  .slider-container2 {
+    height: 300px;
+  }
+
+  .slide2 {
+    background-position-y: -20px;
+  }
+
+}
+
+@media (max-width:1135px) {
+  .slider-container2 {
+    height: 250px;
+  }
+
+}
+
+@media (max-width:940px) {
+  .slider-container2 {
+    height: 250px;
+  }
+
+  .slide2 {
+    background-position-x: -140px;
+  }
+
+  .donate-option {
+    flex-basis: 23%;
+  }
+
+}
+
+@media (max-width:860px) {
+  .slider-container2 {
+    height: 180px;
+  }
+
+  .slide2 {
+    background-position-x: 0px;
+  }
+
+  @media (max-width:730px) {
+
     .slide2 {
-      background-position-y: -20px;
+      background-position-x: -55px;
     }
-  
+
   }
-  
-  @media (max-width:1135px) {
-    .slider-container2 {
-      height: 250px;
-    }
-  
+}
+
+@media(max-width:650px) {
+
+  .donate-option {
+    font-size: small;
   }
-  
-  @media (max-width:940px) {
-    .slider-container2 {
-      height: 250px;
-    }
-  
-    .slide2 {
-      background-position-x: -140px;
-    }
-  
-    .donate-option {
-      flex-basis: 23%;
-    }
-  
+
+  .slider-container2 {
+    height: 130px;
+
   }
-  
-  @media (max-width:860px) {
-    .slider-container2 {
-      height: 180px;
-    }
-  
-    .slide2 {
-      background-position-x: 0px;
-    }
-  
-    @media (max-width:730px) {
-  
-      .slide2 {
-        background-position-x: -55px;
-      }
-  
-    }
+
+  .slide2 {
+    background-position-x: 0px;
   }
-  
-  @media(max-width:650px) {
-  
-    .donate-option {
-      font-size: small;
-    }
-  
-    .slider-container2 {
-      height: 130px;
-  
-    }
-  
-    .slide2 {
-      background-position-x: 0px;
-    }
-  
-    .left-arrow2,
-    .right-arrow2 {
-      font-size: 1rem;
-      padding: 10px;
-    }
-  
-    .donate-option {
-      flex-basis: 30%;
-    }
+
+  .left-arrow2,
+  .right-arrow2 {
+    font-size: 1rem;
+    padding: 10px;
   }
-  
-  @media (max-width:480px) {
-    .slider-container2 {
-      height: 110px;
-  
-    }
-  
-    .slide2 {
-      background-position-x: -15px;
-    }
-  
-    .donate-option {
-      flex-basis: 45%;
-    }
+
+  .donate-option {
+    flex-basis: 30%;
   }
-  
-  @media (max-width:390px) {
-    .slider-container2 {
-      height: 100px;
-    }
-  
-    .slide2 {
-      background-position-x: -54px;
-    }
+}
+
+@media (max-width:480px) {
+  .slider-container2 {
+    height: 110px;
+
   }
+
+  .slide2 {
+    background-position-x: -15px;
+  }
+
+  .donate-option {
+    flex-basis: 45%;
+  }
+}
+
+@media (max-width:390px) {
+  .slider-container2 {
+    height: 100px;
+  }
+
+  .slide2 {
+    background-position-x: -54px;
+  }
+}
+
+
 
 
 .project-head {
-    text-align: center;
-    color: rgb(62, 135, 20);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  color: rgb(62, 135, 20);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .picture img {
-    width: 100%;
+  width: 100%;
 }
 
 .activities-paragraph {
 
-    display: flex;
-    gap: 5px;
-    justify-content: center;
-    justify-content: space-around;
-    margin: 110px 50px;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  justify-content: space-around;
+  margin: 110px 50px;
 
 
+}
+
+.open-pdf-button {
+  background-color: #f79503;
+  color: white;
+  font-weight: 600;
+  padding: 60px 28px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 200px;
+  margin-bottom: 100px;
+  margin-left: 42%;
+  transition: background-color 0.3s;
+  font-size: 20px;
+}
+
+.pdf-link .open-pdf-button:hover {
+  background-color: #0bcf15;
 }
 
 .activities-paragraph .paragraph {
-    background-color: white;
-    margin-bottom: 100px;
+  background-color: white;
+  margin-bottom: 100px;
 }
 
 .activities-paragraph .paragraph h2 {
-    font-size: 25px;
-    color: blueviolet;
-    margin-bottom: 20px;
+  font-size: 25px;
+  color: blueviolet;
+  margin-bottom: 20px;
 
 
 }
 
 .activities-paragraph .paragraph p {
-    margin: 20px;
-    font-size: 20px;
+  margin: 20px;
+  font-size: 20px;
 }
 
 .activities-image {
-    position: absolute;
-    margin-left: 60%;
-    display: flex;
-    padding: 37px;
-    background-color: rgb(220, 238, 220);
-    border-radius: 50px;
-    box-shadow: 2px 5px 10px 5px rgb(194, 194, 216);
+  position: absolute;
+  margin-left: 60%;
+  display: flex;
+  padding: 37px;
+  background-color: rgb(220, 238, 220);
+  border-radius: 50px;
+  box-shadow: 2px 5px 10px 5px rgb(194, 194, 216);
 
 
 }
 
 .activities-image img {
-    border-radius: 10px;
-    width: 350px;
+  border-radius: 10px;
+  width: 350px;
 }
 
 @media (max-width:1220px) {
 
-    .activities-image {
-        position: absolute;
-        margin-left: 70%;
-        padding: 22px;
+  .activities-image {
+    position: absolute;
+    margin-left: 70%;
+    padding: 22px;
 
 
-    }
+  }
 
-    .activities-image img {
-        border-radius: 10px;
-        width: 150px;
-    }
+  .activities-image img {
+    border-radius: 10px;
+    width: 150px;
+  }
 }
 
 @media(max-width:950px) {
 
 
 
-    .activities-image {
+  .activities-image {
 
-        border-radius: 15px;
-        position: relative;  
-        right: 150px;
-        padding: 15px;
+    border-radius: 15px;
+    position: relative;
+    right: 150px;
+    padding: 15px;
 
-    }
+  }
 
-    .activities-image img {
-        margin-left: 10px;
-        border-radius: 10px;
-        width: 180px;
-    }
+  .activities-image img {
+    margin-left: 10px;
+    border-radius: 10px;
+    width: 180px;
+  }
 }
 
 @media screen and (max-width:830px) {
 
+  .open-pdf-button {
+    padding: 30px 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 40%;
+    font-size: 10px;
+  }
 
 
-    .activities-image {
-        right: 280px;
-        width: 230px;
-        padding: 15px;
+  .activities-image {
+    right: 280px;
+    width: 230px;
+    padding: 15px;
 
-    }
+  }
 
-    .activities-image img {
-        margin-left: 10px;
-        border-radius: 10px;
-        width: 180px;
-    }
+  .activities-image img {
+    margin-left: 10px;
+    border-radius: 10px;
+    width: 180px;
+  }
 
 }
 
 @media(max-width:600px) {
 
-    .project-head {
-        font-size: larger;
-    }
+  .open-pdf-button {
+    padding: 20px 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 38%;
+    font-size: 12px;
+  }
+  
+  .project-head {
+    font-size: larger;
+  }
 
-    .activities-paragraph .paragraph h2 {
-        font-size: 17px;
-    }
+  .activities-paragraph .paragraph h2 {
+    font-size: 17px;
+  }
 
-    .activities-paragraph .paragraph h3 {
-        font-size: 17px;
-    }
+  .activities-paragraph .paragraph h3 {
+    font-size: 17px;
+  }
 
-    .activities-paragraph .paragraph p {
-        margin: 10px;
-        font-size: 12px;
-    }
+  .activities-paragraph .paragraph p {
+    margin: 10px;
+    font-size: 12px;
+  }
 
-    .activities-image {
-        padding: 20px;
-        right: 100px;
-        box-shadow: none
-    }
+  .activities-image {
+    padding: 20px;
+    right: 100px;
+    box-shadow: none
+  }
 }
 
 @media (max-width:460px) {
 
-    .activities-paragraph .paragraph h2 {
-        font-size: 15px;
-    }
+  .activities-paragraph .paragraph h2 {
+    font-size: 15px;
+  }
 
-    .activities-paragraph .paragraph p {
-        margin: 17px;
-        font-size: 14px;
-    }    
-    .activities-image {
-        right: 150px;
-        width: 180px;
-        padding: 15px;
+  .activities-paragraph .paragraph p {
+    margin: 17px;
+    font-size: 14px;
+  }
 
-    }
+  .activities-image {
+    right: 150px;
+    width: 180px;
+    padding: 15px;
 
-    .activities-image img {
-        margin-left: 10px;
-        width: 130px;
-    }
+  }
+
+  .activities-image img {
+    margin-left: 10px;
+    width: 130px;
+  }
+
+  
+  .open-pdf-button {
+    padding: 20px 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 30%;
+    font-size: 10px;
+  }
 
 
 }

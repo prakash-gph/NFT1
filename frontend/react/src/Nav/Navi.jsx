@@ -60,7 +60,9 @@ const Navi = () => {
             <li><NavLink to="/Events">Events</NavLink></li>
             <li><NavLink to="/Gallery">Gallery</NavLink></li>
             <li><NavLink to="/Contact">Contact</NavLink></li>
-            <li><NavLink to="/Donation">Donation</NavLink></li>
+            
+             <Link className='dona' to="/Donation"><span>Donation🤍</span></Link>
+             
           </ul>
         </div>
         {showSideBar && <div className='mobile-views' >
@@ -83,7 +85,9 @@ const Navi = () => {
             <li><NavLink to="/Events">Events</NavLink></li>
             <li><NavLink to="/Gallery">Gallery</NavLink></li>
             <li><NavLink to="/Contact">Contact</NavLink></li>
-            <li><NavLink to="/Donation">Donation</NavLink></li>
+             
+             <Link className='dona' to="/Donation"><span>Donation🤍</span></Link>
+
           </ul>
         </div>}
         <div className="iconsbar">

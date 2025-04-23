@@ -5,14 +5,7 @@ import React, { useEffect, useState } from 'react'
 import "./OurActivities.css"
 
 
- 
-
-
-
-
 const Project = () => {
-
-
 
 
 
@@ -99,13 +92,14 @@ const Project = () => {
 
       <h1 className='project-head'>Project</h1>
 
-    
+      <div className="pdf-link">
+        <a href="src\assets\nft.pdf" target="_blank" rel="noopener noreferrer">
+          <button className="open-pdf-button">NATION'S FIRST TRUST
+            <li></li>CLIK TO VIEW </button>
+        </a>
+</div>
 
-
-
-
-
-     { /*
+        { /*
       <div className="activities-paragraph">
         <div className="paragraph">
 
@@ -194,8 +188,8 @@ const Project = () => {
       </div>
      */}
 
-    </div>
-  )
+      </div>
+      )
 }
 
-export default Project
+      export default Project

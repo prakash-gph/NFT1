@@ -151,7 +151,7 @@ function Home() {
           future of our society.</h4>
 
           <div className="link1">
-            <Link className="a" to='/Become a volunteer'>Become a Volunteer</Link>
+            <Link className="a" to='/Volunteer'>Become a Volunteer</Link>
           </div>
           <div className="link2">
             <Link className="a" to='/Donation'>Make a Donation</Link>
