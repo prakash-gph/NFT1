@@ -1,0 +1,43 @@
+.pdf-container{
+    display: flex;
+    margin: 0px 0px 100px 0px;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+.pdf-btn {
+    color: rgb(227, 98, 12);
+    display: flex;
+    justify-content: center;
+    margin: 100px 0px 10px;
+    
+    
+    
+}
+.pdf-btn h1{
+    padding: 9px 4px 9px 10px;
+    cursor: pointer;
+    border: 2px solid;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pdf-btn h1:hover{
+    transition: 0.9s;
+    background-color: rgb(4, 113, 17);
+}
+@media (max-width:600px){
+   
+    .pdf-btn h1{
+       font-size: medium;
+    }
+}
+
+@media (max-width:400px){
+   
+    .pdf-btn h1{
+       font-size: smaller;
+    }
+}

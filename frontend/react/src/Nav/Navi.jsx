@@ -37,7 +37,7 @@ const Navi = () => {
         <div className='title'>
           <h4>தேசமே ! பிரதானம் !</h4>
           <Link className='a' to='/'>NATION'S FIRST TRUST</Link>
-          <p>service to mankind</p>
+          <p>Service to Mankind</p>
         </div>
 
         <div className='mobile-view'>

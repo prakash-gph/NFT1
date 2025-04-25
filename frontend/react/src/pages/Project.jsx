@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 // import image from "/images/barat-Mata2.svg"
 
 import "./OurActivities.css"
+import PdfView from './PdfView';
 
 
 const Project = () => {
@@ -94,12 +95,16 @@ const Project = () => {
 
       <h1 className='project-head'>Project</h1>
 
-      <div className="pdf-link">
-        <Link to = "https://nft1-frontend.onrender.com/src/assets/nft.pdf" target="_blank" rel="noopener noreferrer">
+      <div>
+        <PdfView/>
+      </div>
+
+      {/* <div className="pdf-link">
+        <Link to = "sample" target="_blank" rel="noopener noreferrer">
           <button className="open-pdf-button">NATION'S FIRST TRUST
             <li></li>CLIK TO VIEW </button>
         </Link>
-</div>
+</div> */}
 
         { /*
       <div className="activities-paragraph">

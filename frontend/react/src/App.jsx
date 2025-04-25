@@ -13,7 +13,7 @@ import Volunteer from './pages/Volunteer'
 import Mission from './pages/Mission'
 import Board from './pages/Board'
 import Gallery from './pages/Gallery'
-import pdf from '/src/assets/nft.pdf'
+
 
 
 function App() {
@@ -31,7 +31,6 @@ function App() {
       <Route path='Mission' element={<Mission />} />
       <Route path='Board of trustees' element={<Board />} />
       <Route path='Gallery' element={<Gallery />} />
-      <Route path='pdf' element={pdf} />
       <Route path='*' element={<NotFound />} />
 </Route>
       ))

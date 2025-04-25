@@ -164,13 +164,13 @@ function Home() {
       <div className="background-image">
         <div className="backgroun-image-head">
           <h5>Testimonials</h5>
-          <h2>Happy Beneficiaries</h2>
+          <h2>Empowering Lives, Enriching Futures</h2>
           <h4>Building a brighter future, together.</h4>
         </div>
       </div>
 
       <div className="input-head">
-        <h6>Newsletter</h6>
+        <h6>Join Us</h6>
         <h3>Sign up to hear from us about our new activities.</h3>
       </div>
 
