@@ -12,7 +12,7 @@ import { GoChevronDown } from "react-icons/go";
 const PdfView = () => {
 
 
-  const [showPdf, setShowPdf] = useState(true)
+  const [showPdf, setShowPdf] = useState(false)
 
 
   const viewPdf = () => {
