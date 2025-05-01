@@ -8,6 +8,8 @@ import { user, contact, volunteerData } from "../datamodel/duser.js"
 
 export const routers = router.post("/data", async (req, res) => {
     const { name, email } = req.body
+
+    console.log(name,email)
     try {
 
         const check = await user.findOne({ email })

@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import axios from "axios"
 import "./Volunteer.css"
 import { ToastContainer, toast } from "react-toastify";
-
+const BACKEND_URL = import.meta.env.BACKEND_URL;
 const Volunteer = () => {
 
     const [data, setdata] = useState({
@@ -21,7 +21,7 @@ const Volunteer = () => {
                  return toast.warning("Must fill the all table")
             }
 
-            const {data} = await axios.post("https://nft1-backend.onrender.com/become-volunteer",{
+            const {data} = await axios.post(`${BACKEND_URL}become-volunteer`,{
                 name,email,mobile,city,message
                 
             })

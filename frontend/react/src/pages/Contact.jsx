@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import axios from "axios"
 import { ToastContainer, toast } from "react-toastify";
 import "./Contact.css";
+const BACKEND_URL = import.meta.env.BACKEND_URL;
 const countries = [
   {
     name: 'India',
@@ -77,7 +78,7 @@ const Contact = () => {
       }
       
       setShowLoader(true)
-      const { data } = await axios.post("https://nft1-backend.onrender.com/contact-information", {
+      const { data } = await axios.post(`${BACKEND_URL}contact-information`, {
         name, email, city, message, phoneNumber
       })
 

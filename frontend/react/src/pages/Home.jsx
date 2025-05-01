@@ -2,9 +2,14 @@ import React, { useState, useEffect } from 'react'
 import { Link } from "react-router-dom"
 import axios from "axios"
 import { ToastContainer, toast } from "react-toastify";
+
 import "./Home.css"
 
+const BACKEND_URL = import.meta.env.BACKEND_URL;
+console.log(BACKEND_URL)
+
 function Home() {
+ 
   const slides = [
     { url: 'images/slide0.svg' },
     { url: 'images/slide1.svg' },
@@ -54,7 +59,7 @@ function Home() {
     }
 
     try {
-      const { data } = await axios.post("https://nft1-backend.onrender.com/data", { name, email });
+      const { data } = await axios.post(`${BACKEND_URL}data`, { name, email });
 
       if (data.error) {
         return toast.error(data.error);
@@ -118,12 +123,12 @@ function Home() {
       <div className="container-paragraph">
         <div className="paragraph">
           <h1>Who We Are</h1>
-             <div >
-          <p>Nation's First Trust (NFT) is dedicated to transforming Bharat into<br></br>a developed nation.
-            We aim to build a foundation of trust<br></br>by focusing on sustainable growth,community empowerment
-            <br></br>and innovation.  Our initiatives are designed to enhance social welfare.</p>
+          <div >
+            <p>Nation's First Trust (NFT) is dedicated to transforming Bharat into<br></br>a developed nation.
+              We aim to build a foundation of trust<br></br>by focusing on sustainable growth,community empowerment
+              <br></br>and innovation.  Our initiatives are designed to enhance social welfare.</p>
           </div>
-          
+
           <p>Bharat, a land of rich heritage and immense potential,stands<br></br> at the cusp of a new era.
             With its vibrant culture,diverse traditions<br></br>  and strong values. It has long been a
             guiding light of selfless service <br></br> and cultural strength.NFT envisions harnessing this strength
@@ -148,7 +153,7 @@ function Home() {
           <h5>Nation's First Trust</h5>
           <h4>Get involved in our social welfare and charity<br></br>initiatives</h4>
           <h4>Join our foundation today and start building<br></br> the
-          future of our society.</h4>
+            future of our society.</h4>
 
           <div className="link1">
             <Link className="a" to='/Volunteer'>Become a Volunteer</Link>
