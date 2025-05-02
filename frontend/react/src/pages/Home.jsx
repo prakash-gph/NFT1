@@ -122,7 +122,7 @@ function Home() {
 
       <div className="container-paragraph">
         <div className="paragraph">
-          <h1>Who We Ares</h1>
+          <h1>Who We Are</h1>
           <div >
             <p>Nation's First Trust (NFT) is dedicated to transforming Bharat into<br></br>a developed nation.
               We aim to build a foundation of trust<br></br>by focusing on sustainable growth,community empowerment
