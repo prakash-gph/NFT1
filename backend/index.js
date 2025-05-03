@@ -7,7 +7,11 @@ import connectdb from "./database/db.js"
 const app = express()
 dotenv.config()
 const port = process.env.PORT || 1200;
-
+ 
+app.get("/",(req,res)=>{
+    res.json("api is working")
+    
+ })
 app.use(json())
 app.use(cors())
 app.use(routers)
