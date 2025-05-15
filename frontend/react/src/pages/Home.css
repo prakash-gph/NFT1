@@ -10,8 +10,12 @@
 .slider {
     height: 100%;
 }
+.slides{
+ margin-top: 146px;
+}
 
 .slides-container {
+
     display: flex;
     height: 100%;
     transition: transform 0.4s ease-in-out;
@@ -24,7 +28,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
+ 
 }
 
 /* Arrows */
@@ -163,6 +167,7 @@
     border-radius: 50px;
     justify-content: space-around;
     margin: 100px 0px;
+    
 
 }
 
@@ -173,10 +178,15 @@
 }
 
 .container-paragraph .paragraph p {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    justify-content: left;
+font-family: 'Segoe UI', Tahoma, 'DejaVu Sans', 'Liberation Sans', Verdana, sans-serif;
+    text-align: justify;
+    text-align-last:justify ;
+   font-weight:700;
     margin: 25px;
     font-size: 20px;
+
+
+  
    
 }
 
@@ -264,7 +274,7 @@
 }
 
 .join-commu .link1 a:hover {
-    background-color: #2308ee;
+    background-color: #f75a16;
 }
 
 .join-commu .link2 a:hover {
@@ -505,6 +515,7 @@
 
     .container-paragraph .paragraph p {
         font-size: smaller;
+        
     }
 
     .container-paragraph .paragraph p:hover {

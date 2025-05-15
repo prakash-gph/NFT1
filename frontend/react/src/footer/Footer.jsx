@@ -23,9 +23,9 @@ const Footer = () => {
                 <div className='foote-col'>
                     <h4>Contact Information</h4>
                     <h5>Call us: 04179-295781</h5>
-                    <h5>Mobile: +917598378989</h5>
-                    <h5>Email: nft.rss.ind@gmail.com</h5>
-                    <h5>Website: www.nationfirsttrust.in</h5>
+                    <h5>Mobile: +91-7598378989</h5>
+                    <h5>Website: Nationsfirsttrust.com</h5>
+                     <h5>Email: nft.rss.ind@gmail.com</h5>
                     <div className='foot-icon'>
                         <Link className='a' to='#'><FaFacebook /></Link>
                         <Link className='a' to='#'><FaInstagram /></Link>
@@ -34,7 +34,7 @@ const Footer = () => {
                 </div>
             </footer>
             <div className='copy'>
-                <div style={{ fontSize: "15px" }}>
+                <div style={{ fontSize: "17px" }}>
                     <h6>Copyright © Nation's First Trust - All Rights Reserved</h6>
                 </div>
                 <div className="privacy-policy">

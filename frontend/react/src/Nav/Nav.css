@@ -190,16 +190,18 @@
 
 .nav2 {
 
-    margin-top: 146px;
+    margin-top: 176px
+    /* margin-top: 146px;
     width: 100%;
     padding: 12px;
-    background-color: rgb(46, 157, 81);
+    background-color: rgb(46, 157, 81); */
 }
 
 .iconsbar {
     font-size: 25px;
     display: none;
     cursor: pointer;
+    color: #eb5823;
 }
 
 .mobile-views {

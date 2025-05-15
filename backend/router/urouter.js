@@ -1,7 +1,7 @@
 import express, { json } from "express"
 // import twilio from "twilio"
 const router = express.Router()
-import { user, contact, volunteerData } from "../datamodel/duser.js"
+import { user, contact, volunteerData} from "../datamodel/duser.js"
 // import transport from "../nodemailer/nodeMailer.js"
 
 
@@ -45,7 +45,7 @@ export const contactRouters = router.post("/contact-information", async (req, re
         }
 
         //OTPGENERATE
-        // const otp = Math.floor(100000 + Math.random() * 900099);
+        // const otp = Math.floor(100000 + Math.random() * 900000);
         // storeOtp[""] = { otp }
         // const mailOption = {
         //     from: process.env.SENDER_EMAIL,
@@ -125,3 +125,5 @@ export const volunteerRouters = router.post("/become-volunteer", async (req, res
         console.log("API ERRORS: " + error)
     }
 })
+
+

@@ -8,6 +8,7 @@ import "./OurActivities.css"
 import PdfView from './PdfView';
 
 
+
 const Project = () => {
 
 
@@ -94,10 +95,11 @@ const Project = () => {
 
 
       <h1 className='project-head'>Project</h1>
+<div>
+</div>
 
-      <div>
-        <PdfView/>
-      </div>
+        <PdfView />
+      
 
       {/* <div className="pdf-link">
         <Link to = "sample" target="_blank" rel="noopener noreferrer">

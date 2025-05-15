@@ -3,7 +3,7 @@ import { log }  from "console"
 
 const connectdb = async () => {
     try {
-        await mongoose.connect(process.env.DB || process.env.DB2 || process.env.DB3)
+        await mongoose.connect(process.env.DB)
         log("Database Connected Successfull")
     }
     catch (error) {

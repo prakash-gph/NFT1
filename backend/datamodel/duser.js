@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
 
+
 const schema = new mongoose.Schema({
     name: {
         type: String,
@@ -10,7 +11,7 @@ const schema = new mongoose.Schema({
         require: true,
         unique: true
     },
-  
+
     role: {
         type: String,
         default: "user"
@@ -21,64 +22,86 @@ const schema = new mongoose.Schema({
 export const user = mongoose.model("User", schema)
 //CONTACT INFORMATION
 const contactInfromation = new mongoose.Schema({
-    name:{
-        type:String,
-        require:true,
+    name: {
+        type: String,
+        require: true,
     },
-    email:{
-      type:String,
-      require:true,
-      unique:true
+    email: {
+        type: String,
+        require: true,
+        unique: true
     },
-    mobile:{
-        type:Number,
-        require:true,
+    mobile: {
+        type: Number,
+        require: true,
     },
-    city:{
-        type:String,
-        require:true,
+    city: {
+        type: String,
+        require: true,
     },
-    message:{
-        type:String,
-        require:true
+    message: {
+        type: String,
+        require: true
     },
-    role:{
-        type:String,
-        default:"User contact information"
+    role: {
+        type: String,
+        default: "User contact information"
     }
 
-},{timestamps:true})
+}, { timestamps: true })
 
-export const contact = new mongoose.model("Contact-Collection",contactInfromation)
+export const contact = new mongoose.model("Contact-Collection", contactInfromation)
 //BECOME VOLUNTEER
 
 const volunteer = new mongoose.Schema({
-    name:{
-        type:String,
-        require:true
+    name: {
+        type: String,
+        require: true
     },
-    email:{
-        type:String,
-        require:true,
-        unique:true
+    email: {
+        type: String,
+        require: true,
+        unique: true
     },
-    mobile:{
-        type:Number,
-        require:true,
+    mobile: {
+        type: Number,
+        require: true,
     },
-    city:{
-        type:String,
-        require:true
+    city: {
+        type: String,
+        require: true
     },
-    message:{
-        type:String,
-        require:true
+    message: {
+        type: String,
+        require: true
     },
-    role:{
-        type:String,
-        default:"Volunteer"
+    role: {
+        type: String,
+        default: "Volunteer"
     },
-    
-},{timestamps:true})
 
-export const volunteerData = mongoose.model("Volunteer-Datas",volunteer)
+}, { timestamps: true })
+
+export const volunteerData = mongoose.model("Volunteer-Datas", volunteer)
+
+const adminSendOtp = new mongoose.Schema({
+    email: {
+        type: String,
+        require: true
+    },
+    password: {
+        type: String,
+        require:true
+    },
+    adminOtp: {
+        type: String,
+        default: ""
+    },
+    adminExpireOtp: {
+        type: Number,
+        default: 0
+    }
+})
+
+
+export const adminResetPassword = mongoose.model("adminSendOtp", adminSendOtp)
