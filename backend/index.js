@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 import { routers, contactRouters, volunteerRouters } from "./router/urouter.js";
 // import {otpVerifiy} from "./router/urouter.js"
 import connectdb from "./database/db.js"
-import { adminLogin, adminSendOtp, resetPassword } from "./adminControllers/adminAuthController.js";
+// import { adminLogin, adminSendOtp, resetPassword } from "./adminControllers/adminAuthController.js";
 
 const app = express()
 dotenv.config()
@@ -20,9 +20,9 @@ app.use(routers)
 app.use(contactRouters)
 app.use(volunteerRouters)
 // app.use(otpVerifiy)
-app.use(adminLogin)
-app.use(adminSendOtp)
-app.use(resetPassword)
+// app.use(adminLogin)
+// app.use(adminSendOtp)
+// app.use(resetPassword)
 
 app.listen(port, () => {
     console.log(`Server is running http://localhost:${port}`)

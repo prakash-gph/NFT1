@@ -84,24 +84,24 @@ const volunteer = new mongoose.Schema({
 
 export const volunteerData = mongoose.model("Volunteer-Datas", volunteer)
 
-const adminSendOtp = new mongoose.Schema({
-    email: {
-        type: String,
-        require: true
-    },
-    password: {
-        type: String,
-        require:true
-    },
-    adminOtp: {
-        type: String,
-        default: ""
-    },
-    adminExpireOtp: {
-        type: Number,
-        default: 0
-    }
-})
+// const adminSendOtp = new mongoose.Schema({
+//     email: {
+//         type: String,
+//         require: true
+//     },
+//     password: {
+//         type: String,
+//         require:true
+//     },
+//     adminOtp: {
+//         type: String,
+//         default: ""
+//     },
+//     adminExpireOtp: {
+//         type: Number,
+//         default: 0
+//     }
+// })
 
 
-export const adminResetPassword = mongoose.model("adminSendOtp", adminSendOtp)
+// export const adminResetPassword = mongoose.model("adminSendOtp", adminSendOtp)
