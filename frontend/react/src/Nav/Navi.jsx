@@ -11,6 +11,7 @@ const Navi = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [showSideBar, setShowSideBar] = useState(false)
 
+
   const menuRef = useRef()
   useEffect(() => {
 
@@ -60,35 +61,37 @@ const Navi = () => {
             <li><NavLink to="/Events">Events</NavLink></li>
             <li><NavLink to="/Gallery">Gallery</NavLink></li>
             <li><NavLink to="/Contact">Contact</NavLink></li>
-            
-             <Link className='dona' to="/Donation"><span>Donation🤍</span></Link>
-             
+
+            <Link className='dona' to="/Donation"><span>Donation🤍</span></Link>
+
           </ul>
         </div>
-        {showSideBar && <div className='mobile-views' >
+        {showSideBar && <div className='mobile-views'>
           <ul className='nav-link' ref={menuRef}>
-            <li><NavLink to='/'>Home</NavLink></li>
+            <li onClick={() => setShowSideBar(false)}><NavLink to='/'>Home</NavLink></li>
 
             <li onMouseEnter={() => setIsDropdownOpen(true)}
               onMouseLeave={() => setIsDropdownOpen(false)}>
               <p>About<i><GoChevronDown /></i></p>
               {isDropdownOpen && (
                 <div className="dropdown-content">
-                  <Link className='a' to="/About">About Us</Link>
-                  < Link className='a' to="/Board of trustees">Board of trustees</Link>
-                  <Link className='a' to="/Mission">Mission & Vision</Link>
-                  <Link className='a' to="/Volunteer">Volunteers</Link>
+                  <Link onClick={() => setShowSideBar(false)} className='a' to="/About">About Us</Link>
+                  < Link onClick={() => setShowSideBar(false)} className='a' to="/Board of trustees">Board of trustees</Link>
+                  <Link onClick={() => setShowSideBar(false)} className='a' to="/Mission">Mission & Vision</Link>
+                  <Link onClick={() => setShowSideBar(false)} className='a' to="/Volunteer">Volunteers</Link>
                 </div>
               )}
             </li>
-            <li><NavLink to="/Project">Project</NavLink></li>
-            <li><NavLink to="/Events">Events</NavLink></li>
-            <li><NavLink to="/Gallery">Gallery</NavLink></li>
-            <li><NavLink to="/Contact">Contact</NavLink></li>
-             
-             <Link className='dona' to="/Donation"><span>Donation🤍</span></Link>
+            <li onClick={() => setShowSideBar(false)}><NavLink to="/Project">Project</NavLink></li>
+            <li onClick={() => setShowSideBar(false)}><NavLink to="/Events">Events</NavLink></li>
+            <li onClick={() => setShowSideBar(false)}><NavLink to="/Gallery">Gallery</NavLink></li>
+            <li onClick={() => setShowSideBar(false)}><NavLink to="/Contact">Contact</NavLink></li>
+
+            <Link onClick={() => setShowSideBar(false)} className='dona' to="/Donation"><span>Donation🤍</span></Link>
 
           </ul>
+
+
         </div>}
         <div className="iconsbar">
           <FaBars

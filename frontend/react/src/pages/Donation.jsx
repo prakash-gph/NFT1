@@ -87,10 +87,10 @@ const DonationPage = () => {
     
       <div className="container">
         <div>
-          <h3>Donate Process.</h3>
+          {/* <h3>Donate Process.</h3>
           <p><FcApproval /> Select focus areas from the list below that you wish to support.</p>
           <p><FcApproval /> Proceed to donation and contribute towards the cause of your choice.</p>
-          <p><FcApproval /> Your generous support helps us deliver lasting change to those in need.</p>
+          <p><FcApproval /> Your generous support helps us deliver lasting change to those in need.</p> */}
         </div>
         <div className="container-image">
           <img src="images/donate-side.svg" alt="image"></img>
@@ -122,7 +122,9 @@ const DonationPage = () => {
         <p>{descriptions[focusArea]}</p> */}
       </div>
 
-      <div className="amount">
+      {/* Enter Amount */}
+
+      {/* <div className="amount">
         <h3>Enter Amount (₹)</h3>
         <input
           type="number"
@@ -144,7 +146,15 @@ const DonationPage = () => {
 
       <div className="bt">
         <button onClick={handlePayment}>Donate <img src="images/rupee.svg"></img> </button>
+      </div> */}
+
+
+
+      <div className="qrcode">
+        <img src="images/QRcode.png" alt="image"></img>
+
       </div>
+
       <div className="description-address">
         <h6>NATIONS FIRST TRUST</h6>
         <h6>UNION BANK OF INDIA </h6>

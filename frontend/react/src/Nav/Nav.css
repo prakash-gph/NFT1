@@ -210,6 +210,14 @@
     display: none;
 }
 
+
+.visibel{
+    width: 100%;
+}
+.hide{
+    width: 0%;
+}
+
 @media screen and (max-width:1277px) {
 
     .title {
