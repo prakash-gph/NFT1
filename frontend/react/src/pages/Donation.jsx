@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { FcApproval } from "react-icons/fc";
 import { toast, ToastContainer } from "react-toastify";
 
+
 import "./Donat.css";
 
 const descriptions = {
@@ -35,15 +36,20 @@ const descriptions = {
 const DonationPage = () => {
 
 
+
   const [focusArea, setFocusArea] = useState("Education");
   const [amount, setAmount] = useState("");
   const [remarks, setRemarks] = useState("Education"); // Default remark
   const navigate = useNavigate();
 
+
+
   // Update remarks when focusArea changes (if the user hasn't manually edited it)
   useEffect(() => {
     setRemarks(focusArea);
+
   }, [focusArea]);
+
 
   const handlePayment = () => {
     if (!amount || amount <= 0) {
@@ -92,14 +98,11 @@ const DonationPage = () => {
           <p><FcApproval /> Proceed to donation and contribute towards the cause of your choice.</p>
           <p><FcApproval /> Your generous support helps us deliver lasting change to those in need.</p> */}
         </div>
-        <div className="container-image">
-          <img src="images/donate-side.svg" alt="image"></img>
-        </div>
-
+        
       </div>
 
-      <div style={{ margin: "5px 0px" }}>
-        <h3 className="donateHead">Richness Begins With Giving.</h3>
+      <div style={{ margin: "35px 0px" }}>
+        <h3 className="donateHead">Richness Begins With Giving. Donate Now.</h3>
 
         <div className="focus">
           {Object.keys(descriptions).map((area) => (
@@ -107,6 +110,13 @@ const DonationPage = () => {
               <input
                 type="radio"
                 name="focus"
+
+                onClick={() => {
+                  setTimeout(() => {
+                    navigate("/QR Code Donate")
+                  }, 500)
+                }
+                }
                 value={area}
                 checked={focusArea === area}
                 onChange={() => setFocusArea(area)}
@@ -147,38 +157,6 @@ const DonationPage = () => {
       <div className="bt">
         <button onClick={handlePayment}>Donate <img src="images/rupee.svg"></img> </button>
       </div> */}
-
-
-
-      <div className="qrcode">
-        <img src="images/QRcode.png" alt="image"></img>
-
-      </div>
-
-      <div className="description-address">
-        <h6>NATIONS FIRST TRUST</h6>
-        <h6>UNION BANK OF INDIA </h6>
-        <h6>Account Number: 333802010461947</h6>
-        <h6>IFSC code: UBIN0533386</h6>
-        <h6>Branch Code: 533386</h6>
-        <h6>MICR Code: 635026103</h6>
-        <h6>Natrampalli branch</h6>
-        <hr />
-        <h4>Bank Address:</h4>
-        <p>69/3, Main Road, Natrampalli,Dist. Vellore, Tamil Nadu, Post Box No - 635852</p>
-        <h4>District:</h4>
-        <p> Vellore "Union Bank of India in "Vellore" District</p>
-        <h4>Branch Located:</h4>
-        <p>Natrampalli</p>
-        <h4>State:</h4>
-        <p>Tamil Nadu</p>
-        <h4>Country:</h4>
-        <p>India</p>
-        <h4>IFSC Code:</h4>
-        <p>UBIN0533386 (used for RTGS, IMPS and NEFT transactions)</p>
-        
-      </div>
-
 
     </div>
 

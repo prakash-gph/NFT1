@@ -1,0 +1,135 @@
+.qrcode {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+}
+
+.qrcode p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 700;
+    font-size: xx-large;
+    color: rgb(240, 70, 8);
+}
+
+.qrcode img {
+    width: 400px;
+}
+
+.qrcode p {
+    margin: 16px;
+}
+
+.qrcode h3 {
+    font-size: 26px;
+}
+
+.details p {
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 700;
+    font-size: xx-large;
+    color: rgb(240, 70, 8);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+.description-address {
+    width: 435px;
+    word-Wrap: break-word;
+    border: rgb(6, 131, 6) 3px solid;
+    margin: 0px 10px 10px;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: rgb(233, 240, 240);
+
+}
+
+.description-address h6 {
+    font-size: 15px;
+    margin: 5px;
+    color: rgb(82, 135, 157);
+    text-transform: uppercase;
+}
+
+.description-address h4 {
+    margin: 3px 0;
+}
+
+.description-address p {
+    font-size: 13px;
+}
+
+.descripe {
+    display: flex;
+    justify-content: center;
+
+
+}
+
+@media(max-width:860px) {
+    .description-address {
+
+        width: 350px;
+
+    }
+
+    .description-address h6 {
+        font-size: 12px;
+    }
+
+    .description-address h4 {
+        margin: 0px 0;
+        font-size: small;
+    }
+
+    .description-address p {
+        font-size: 10px;
+    }
+
+}
+
+@media(max-width:600px) {
+    .qrcode img {
+        width: 250px;
+    }
+
+    .description-address {
+        width: 350px;
+    }
+
+    .qrcode p {
+        font-size: 15px;
+    }
+
+    .details p {
+        font-size: 15px;
+    }
+    .qrcode h3 {
+    font-size: 16px;
+}
+
+}
+
+@media (max-width:390px) {
+
+     .qrcode p {
+        font-size: 11px;
+    }
+
+    .details p {
+        font-size: 11px;
+    }
+
+     .qrcode h3 {
+    font-size: 12px;
+}
+
+    .description-address {
+        width: 250px;
+    }
+
+}
