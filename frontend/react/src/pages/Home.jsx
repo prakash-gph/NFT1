@@ -9,7 +9,7 @@ const BACKEND_URL = import.meta.env.BACKEND_URL;
 console.log(BACKEND_URL)
 
 function Home() {
- 
+
   const slides = [
     { url: 'images/slide0.svg' },
     { url: 'images/slide1.svg' },
@@ -123,19 +123,22 @@ function Home() {
       <div className="container-paragraph">
         <div className="paragraph">
           <h1>Who We Are</h1>
-          <div >
-            <p>Nation's First Trust (NFT) is dedicated to transforming Bharat into<br></br>a developed nation.
-              We aim to build a foundation of trust<br></br>by focusing on sustainable growth,community empowerment
-              <br></br>and innovation.  Our initiatives are designed to enhance social welfare.</p>
-          </div>
+         
+          <p>Nation's First Trust (NFT) is dedicated to transforming Bharat<br></br>
+            into a developed, self-sustaining nation. We aim to build a foundation <br></br>
+            of trust by focusing on sustainable growth, community empowerment, <br></br>
+            technological advancement, and innovation. Our wide-ranging initiatives <br></br>
+            are carefully designed to enhance social welfare and economic inclusivity.</p>
 
-          <p>Bharat, a land of rich heritage and immense potential,stands<br></br> at the cusp of a new era.
-            With its vibrant culture,diverse traditions<br></br>  and strong values. It has long been a
-            guiding light of selfless service <br></br> and cultural strength.NFT envisions harnessing this strength
+          <p>Bharat, a land of rich heritage and immense potential, stands <br></br>
+            at the cusp of a new era. With its vibrant culture, diverse traditions,<br></br>
+            and strong values, it has long been a guiding light of selfless service and <br></br>
+            cultural strength. NFT envisions harnessing this collective <br></br> strength to build a
+            resilient, self-reliant, and progressive nation.</p>
 
-            <br></br> to build a self-reliant and progressive nation.</p>
-
-          <p>NATION'S FIRST TRUST is a registered Charitable Trust.<br></br>  NFT perceives its role as a catalyst in revitalizing cultural sensitivity,<br></br> bridging tradition and modernity in today’s world.</p>
+          <p>NATION'S FIRST TRUST is a registered Charitable Trust. NFT perceives <br></br>
+            role as a proactive catalyst in revitalizing cultural sensitivity, nurturing <br></br>
+            national identity, and bridging tradition and modernity in today’s interconnected world.</p>
 
           <h3>-Nation's First Trust </h3>
 

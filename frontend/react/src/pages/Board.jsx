@@ -14,7 +14,7 @@ const Board = () => {
       <div className="photo1">
         <img src='images/photo/S.Sampangi.svg' alt='image'></img>
         <h4>S.Sampangi</h4>
-        <p style={{textAlign:"center"}}> President</p>
+        <p style={{ textAlign: "center" }}> President</p>
       </div>
 
       <div className="photo2">
@@ -23,12 +23,6 @@ const Board = () => {
           <img src='images/photo/S.Yogini.svg' alt='image'></img>
           <h4>S.Yogini M.A.LET</h4>
           <p style={{ textAlign: "center" }}> Vice Chairman / Trustee</p>
-        </div>
-
-        <div className='row1' >
-          <img src='images/photo/Chandiraseakar.svg' alt='image'></img>
-          <h4>R.Chandirasekar Ex-Army</h4>
-          <p style={{ textAlign: "center" }}>  Secretary / Trustee</p>
         </div>
 
         <div className='row1' >
@@ -43,19 +37,26 @@ const Board = () => {
           <p>Secretary / Trustee</p>
         </div>
 
+        <div className='row1'>
+          <img src='images/photo/M.Boobalan.svg' alt='image'></img>
+          <h4>M.Boobalan</h4>
+          <p>Treasure / Trustee</p>
+        </div>
+
+        <div className='row1' >
+          <img src='images/photo/Chandiraseakar.svg' alt='image'></img>
+          <h4>R.Chandirasekar Ex-Army</h4>
+          <p style={{ textAlign: "center" }}>  Secretary / Trustee</p>
+        </div>
+
+
         <div className='row1' >
           <img src='images/photo/Thirupathi.R.svg' alt='image'></img>
           <h4 >R.Thirupathi  B.E Aeronautical</h4>
           <p style={{ textAlign: "center" }}>Deputy Secretary / Trustee</p>
         </div>
 
-       <div className='row1'>
-          <img src='images/photo/M.Boobalan.svg' alt='image'></img>
-          <h4>M.Boobalan</h4>
-          <p>Treasure / Trustee</p>
-        </div>
-
-
+        
       </div>
     </div>
 

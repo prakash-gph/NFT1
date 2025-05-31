@@ -18,7 +18,7 @@ const Mission = () => {
         <div className="OurMission">
           <h2> Mission & Vision</h2>
           <p><FcCheckmark />Empower Communities – Support social welfare initiatives to uplift underprivileged individuals.</p>
-          <p><FcCheckmark /> Promote Education & Healthcare – Ensure access to quality education and medical facilities for all.</p>
+          <p><FcCheckmark />Promote Education & Healthcare – Ensure access to quality education and medical facilities for all.</p>
           <p><FcCheckmark />Environmental Sustainability – Advocate for tree plantation, clean energy, and ecological balance </p>
           <p><FcCheckmark />Cultural & Social Development – Preserve traditions while fostering inclusivity and modern progress.</p>
           <p><FcCheckmark />Support for the Needy – Aid the elderly, disabled, transgender community, and those below the poverty line.</p>

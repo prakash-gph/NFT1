@@ -46,6 +46,8 @@
 .OurMission p {
     padding: 10px;
     font-size: 18px;
+    text-align: justify;
+    text-align-last: justify;
 }
 
 .OurMission p:hover {
