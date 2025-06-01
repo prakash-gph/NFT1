@@ -15,7 +15,7 @@ import Board from './pages/Board'
 import Gallery from './pages/Gallery'
 import Donate2 from './pages/Donation2'
 
-//k
+
 
 function App() {
 
