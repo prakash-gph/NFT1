@@ -167,9 +167,9 @@
 
     display: flex;
     flex-wrap: wrap;
-    border-radius: 50px;
     justify-content: space-around;
     margin: 100px 0px;
+
 
 
 }
@@ -187,19 +187,15 @@
     font-weight: 700;
     margin: 25px;
     font-size: 20px;
-
-
-
-
 }
 
 .container-paragraph .paragraph p:hover {
 
-    background-color: rgb(75, 196, 106);
+    background-color: rgb(242, 124, 22);
     transition-duration: 1.5s;
     cursor: pointer;
     border-radius: 10px;
-    font-size: 23px;
+    font-size: 21px;
 }
 
 .container-paragraph .paragraph h3 {
@@ -208,8 +204,6 @@
     justify-content: end;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
-
 
 .images {
 
@@ -291,10 +285,8 @@
     position: relative;
     display: flex;
     justify-content: center;
-
     margin-top: 140px;
     height: 300px;
-
     line-height: 40px;
     box-shadow: 1px 10px 7px 5px rgb(169, 150, 186);
 }
@@ -393,6 +385,7 @@
         font-size: 16px;
     }
 
+
 }
 
 @media (max-width:1142px) {
@@ -451,9 +444,34 @@
         font-size: 12px;
 
     }
+
+    .backgroun-image-head h2 {
+        font-size: larger;
+    }
+}
+
+@media(max-width:850px) {
+
+
+    .input-box .btn1 {
+        margin-left: 20px;
+        width: 280px;
+    }
+
+    .input-box .btn2 {
+        margin-left: 0px;
+         width: 280px;
+    }
+
+    .input-box button {
+
+        margin-left: 320px;
+
+    }
 }
 
 @media (max-width:750px) {
+
     .join-commu {
 
         margin-top: 60px;
@@ -464,6 +482,28 @@
 
         font-size: 10px;
 
+    }
+
+    .container-paragraph .paragraph p {
+
+        font-size: 15px;
+    }
+
+
+
+    .input-box .btn1 {
+        width: 250px;
+        margin-left: 50px;
+
+    }
+
+    .input-box .btn2 {
+
+        width: 250px;
+
+    }
+    .input-box button{
+        margin-left: 258px;
     }
 
 }
@@ -541,17 +581,18 @@
 
     .input-box .btn1 {
         width: 300px;
+        margin-left: 70px;
 
     }
 
     .input-box .btn2 {
-
+        margin-left: 70px;
         width: 300px;
         margin-bottom: 15px;
     }
 
     .input-box button {
-        margin-left: 80px;
+        margin-left: 150px;
     }
 
     .backgroun-image-head h5 {
@@ -573,14 +614,25 @@
 
 @media (max-width:524px) {
 
+
+    .backgroun-image-head h2 {
+        font-size: 20px;
+    }
+
+    .input-head h3 {
+        font-size: 18px;
+    }
+
     .input-box .btn1,
     .input-box .btn2 {
         width: 250px;
         font-size: 15px;
+        margin-left: 10px;
 
     }
 
     .input-box button {
+        margin-left: 85px;
         font-size: 15px;
     }
 
@@ -614,19 +666,38 @@
     }
 
     .container-paragraph {
-        font-size: 13px;
+        font-size: 11px;
     }
 
     .container-paragraph .paragraph p:hover {
         font-size: 12px;
+
     }
 
     .paragraph {
         padding: 10px;
     }
+
+
 }
 
 @media (max-width:410px) {
+
+    .container-paragraph .paragraph p {
+        font-size: 7px;
+        margin: 15px;
+    }
+
+    .container-paragraph .paragraph p:hover {
+        font-size: 8px;
+
+    }
+
+    .container-paragraph .paragraph {
+        width: 400px;
+
+    }
+
     .join-commu {
         margin-top: 140px;
         margin-left: 10px;
@@ -671,15 +742,36 @@
 
     .input-box .btn1,
     .input-box .btn2 {
-        width: 220px;
+        width: 250px;
         font-size: 15px;
+        margin-left: 30px;
 
     }
 
     .input-box button {
         font-size: 12px;
-        margin-left: 45px;
+        margin-left: 100px;
         margin-top: 10px;
     }
 
+    .backgroun-image-head h2 {
+        font-size: 17px;
+    }
+
+    .backgroun-image-head {
+        margin-right: 50px;
+    }
+
+    .input-head h3 {
+        font-size: small;
+    }
+
+}
+
+@media (max-width:325px) {
+
+    .input-box .btn1,
+    .input-box .btn2 {
+        width: 200px;
+    }
 }

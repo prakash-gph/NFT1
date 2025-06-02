@@ -14,7 +14,7 @@ const Donate2 = () => {
         <img src="images/QRcode.png" alt="image"></img>
       </div>
 
-      <div className="qrcode">
+      {/* <div className="qrcode">
 
       <p>NFT UPI ID :</p>
 
@@ -24,7 +24,7 @@ const Donate2 = () => {
 
         <h3>7598378989</h3>
 
-      </div>
+      </div> */}
 
 <div className='details'>
 

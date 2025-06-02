@@ -93,7 +93,11 @@
     font-family: monospace;
 }
 
-
+@media screen and (max-width:835px) {
+    .about-paragraph p {
+        font-size: 14px;
+    }
+}
 
 @media screen and (max-width:600px) {
 
@@ -122,9 +126,6 @@
     .information-chief p {
         font-size: medium;
     }
-
-
-
 }
 
 @media screen and (max-width:450px) {
@@ -148,7 +149,7 @@
     }
 
     .about-paragraph p {
-        font-size: 13px;
+        font-size: 12px;
     }
 
     .image img {

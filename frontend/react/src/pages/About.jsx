@@ -1,4 +1,4 @@
-import React from 'react'
+
 import image from "/images/barat Mata.svg"
 import { FcAbout } from "react-icons/fc";
 
