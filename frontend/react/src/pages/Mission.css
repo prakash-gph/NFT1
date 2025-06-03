@@ -65,7 +65,21 @@
     height: 500px;
 
 }
+@media(max-width:945px){
+    .OurMission p{
+        font-size:small;
+    }
+    .OurMission p:hover{
+        font-size: 14px;
+    }
+}
 
+@media(max-width:700px) {
+    .OurMission{
+        width: 700px;
+    }
+
+}
 @media screen and (max-width:600px) {
     .image-head {
         margin-left: 44px;
@@ -73,7 +87,7 @@
     }
 
     .OurMission p {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .mission-head {
@@ -109,6 +123,13 @@
     .image-head {
         font-size: 10px;
         margin-top: 27px;
+    }
+    .OurMission p{
+        font-size: small;
+    }
+
+     .OurMission p:hover{
+        font-size: 14px;
     }
 
 }
